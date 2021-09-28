@@ -7,10 +7,25 @@
 	font-family: 'pixelfont';
 }
 
-.background {
+.btn {
+    font-family: 'pixelfont';
+}
+
+html {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.index-wallpaper {
+	background: url(../img/wallpaper.png) no-repeat center center fixed;
+}
+
+/*body {
 	background: url('../img/ecran.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-}
+  }*/
