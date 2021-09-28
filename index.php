@@ -16,7 +16,7 @@
 <div class="container w-25 h-100">
   <div class="col align-middle pt-5">
     <div class="row align-middle text-center">
-      <h2 class="text-center">La cybersécurité au quotidien</h2>
+      <h2 class="text-center my-5">La cybersécurité au quotidien</h2>
         <div class="border border-dark rounded">
           <p class="text-center" style="margin-top: 2%;">Vous allez incarner un employé dans une entreprise sur une journée ou une semaine durant laquelle vous allez être confronté à
             différentes situations. Celles-ci mettent en scène des aspects de la cybersécurité auxquels vous pouvez être confronté au
