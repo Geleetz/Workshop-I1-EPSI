@@ -13,7 +13,7 @@
   <title>Workshop - Accueil</title>
 </head>
 <body>
-<div class="container">
+<div class="container w-25 h-100">
   <div class="col align-middle pt-5">
     <div class="row align-middle text-center">
       <h2 class="text-center">La cybersécurité au quotidien</h2>
