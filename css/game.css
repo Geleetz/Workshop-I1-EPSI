@@ -10,3 +10,7 @@ div.ecran {
 	background-size: 100%;
 	-o-background-size: cover;*/
 }
+
+body {
+    background-color:rgb(220, 220, 220);
+}
