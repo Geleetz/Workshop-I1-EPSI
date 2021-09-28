@@ -13,17 +13,16 @@
   <title>Workshop - Accueil</title>
 </head>
 <body>
-<h2 class="text-center" style="margin-top: 2%;">La cybersécurité au quotidien</h2>
 <div class="container">
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-6" style="margin-left: auto; margin-right: auto;">
-        <div class="container border border-dark rounded">
+  <div class="col align-items-center pt-5">
+    <div class="row align-items-center text-center">
+      <h2 class="text-center">La cybersécurité au quotidien</h2>
+        <div class="border border-dark rounded">
           <p class="text-center" style="margin-top: 2%;">Vous allez incarner un employé dans une entreprise sur une journée ou une semaine durant laquelle vous allez être confronté à
             différentes situations. Celles-ci mettent en scène des aspects de la cybersécurité auxquels vous pouvez être confronté au
             cours de votre vie en entreprise. Votre but, répondre aux missions qui vous sont demandées tout en respectant les règles pour
             la sécurité du numérique.</p>
-          <div class="d-grid gap-2 col-6 mx-auto" style="margin-bottom: 2%;">
+          <div class="d-grid gap-2 col-6 mx-auto">
             <button style="margin: 2%;" onclick='window.location.href="game.php"' type="button" class="btn btn-outline-danger">Lancer la partie</button>
             <button style="margin: 2%;" onclick='window.location.href="game.php"' type="button" class="btn btn-outline-danger">Lire les règles</button>
             <button style="margin: 2%;" onclick='window.close' type="button" class="btn btn-outline-danger">Quitter</button>
