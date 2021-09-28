@@ -11,10 +11,6 @@
   </head>
   <body>
     <div class="container">
-      <div class="bg-image" style="
-        background-image: url('https://mdbootstrap.com/img/new/standard/city/041.jpg');
-        height: 100vh;
-      "></div>
       <div class="container">
         <div class="container">
         </div>
