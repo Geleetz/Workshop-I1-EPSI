@@ -1,8 +1,5 @@
-
-
 <!doctype html>
-<html lang="fr" class="index-wallpaper">
-
+<html lang="fr">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -12,21 +9,19 @@
   <link href="css/fonts.css" rel="stylesheet">
   <title>Workshop - Accueil</title>
 </head>
-<body style="">
-<h2 class="text-center" style="margin-top: 8%; font-family: pixelfont;">La cybersécurité au quotidien</h2>
-<div class="container">
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4" style="margin-left: auto; margin-right: auto;">
-        <div class="container border border-dark" style="margin-top: 10%;">
-          <div class="d-grid gap-2 col-8 mx-auto" style="margin: 2%;">
+<body>
+<div class="container w-50 h-100" style="color: white;">
+  <div class="col align-middle pt-5">
+    <div class="row align-middle text-center">
+      <h2 class="text-center my-5" style="font-family: pixelfont;">La cybersécurité au quotidien</h2>
+        <div class="container p-3 my-3 bg-white border border-dark rounded w-50">
+        <div class="d-grid gap-2 mx-auto" style="margin: 2%;">
             <button style="margin: 2%;" onclick='window.location.href="game.php"' type="button" class="btn btn-outline-primary">Lancer la partie</button>
             <button style="margin: 2%;" type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Lire les règles</button>
             <button style="margin: 2%;" type="button" class="btn btn-outline-danger">Quitter</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4"></div>
     </div>
   </div>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
