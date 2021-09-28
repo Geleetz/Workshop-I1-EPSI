@@ -12,10 +12,10 @@
 </head>
 
 <body>
-  <h1>Accueil</h1>
-  <p>Vous allez incarner un employé dans une entreprise sur une journée/semaine durant laquelle vous allez être confonté à
+  <h1>La cybersécurité au quotidien de l'entreprise.</h1>
+  <p>Vous incarnez un employé dans une entreprise sur une journée/semaine durant laquelle vous allez être confonté à
     différentes situations. Celles-ci mettent en scène des aspects de la cybersécurité auxquels vous pouvez être confronté au
-    cours de votre vie en entreprise. Votre but, répondre au mission qui vous sont demandée tout en respectant les règles pour
+    cours de votre vie en entreprise. Votre but, répondre aux missions qui vous sont demandées tout en respectant les règles pour
     la sécurité du numérique.</p>
   <form>
     <!--type="submit" formaction="https://fr.w3docs.com/"-->
