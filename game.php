@@ -12,10 +12,6 @@
   </head>
   <body>
     <div class="background">
-      <div class="container">
-        <div class="container">
-        </div>
-      </div>
     </div>
   </body>
   <!-- Ajout des librairies JS -->
