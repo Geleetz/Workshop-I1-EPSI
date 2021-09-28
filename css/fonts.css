@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'dogicapixel';
+	src:  url("../font/dogicapixel.ttf");
+}
+
+.pixel-font {
+	font-family: 'dogicapixel';
+}
