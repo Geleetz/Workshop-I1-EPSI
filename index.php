@@ -15,12 +15,6 @@
 </head>
 <body>
 <h2 class="text-center">La cybersécurité au quotidien</h2>
-<p class="text-center">Vous incarnerez un employé dans une entreprise sur une journée ou une semaine durant laquelle vous allez être confronté à
-  différentes situations. Celles-ci mettent en scène des aspects de la cybersécurité auxquels vous pouvez être confronté au
-  cours de votre vie en entreprise. Votre but, répondre aux missions qui vous sont demandées tout en respectant les règles pour
-  la sécurité du numérique.</p>
-  <div class="d-grid gap-2 col-6 mx-auto">
-    <button onclick="window.location.href='game.php';" type="button" class="btn btn-outline-danger">Lancer la partie</button>
 <div class="container">
   <div class="row">
     <div class="col-md-3"></div>
