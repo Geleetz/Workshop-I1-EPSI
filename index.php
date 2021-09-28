@@ -19,7 +19,11 @@
     la sécurité du numérique.</p>
   <form>
     <!--type="submit" formaction="https://fr.w3docs.com/"-->
+<<<<<<< HEAD
       <button type="button" class="btn btn-danger">Commencez la partie</button>
+=======
+    <button >Cliquez ici pour commencer!</button>
+>>>>>>> c837251040d7524ca60d2f9be8b372fd21ddde87
   </form>
 </body>
 <!-- Ajout des librairies JS -->
