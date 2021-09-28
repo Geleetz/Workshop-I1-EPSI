@@ -14,8 +14,8 @@
 </head>
 <body>
 <div class="container">
-  <div class="col align-items-center pt-5">
-    <div class="row align-items-center text-center">
+  <div class="col align-middle pt-5">
+    <div class="row align-middle text-center">
       <h2 class="text-center">La cybersécurité au quotidien</h2>
         <div class="border border-dark rounded">
           <p class="text-center" style="margin-top: 2%;">Vous allez incarner un employé dans une entreprise sur une journée ou une semaine durant laquelle vous allez être confronté à
