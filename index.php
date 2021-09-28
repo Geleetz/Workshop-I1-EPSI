@@ -15,8 +15,7 @@
 </head>
 <body>
 <h2 class="text-center" style="margin-top: 2%;">La cybersécurité au quotidien</h2>
-<span class="border border-dark">
-<div class="container">
+<div class="container border border-dark">
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6" style="margin-left: auto; margin-right: auto;">
