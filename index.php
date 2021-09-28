@@ -12,14 +12,14 @@
 </head>
 
 <body>
-  <h1>Accueil</h1>
-  <p>Vous allez incarner un employé dans une entreprise sur une journée/semaine durant laquelle vous allez être confonté à
+  <h2 class="text-center">Simulateur de vie professionnelle</h2>
+  <p class="text-justify">Vous incarnerez un employé dans une entreprise sur une journée ou une semaine durant laquelle vous allez être confronté à
     différentes situations. Celles-ci mettent en scène des aspects de la cybersécurité auxquels vous pouvez être confronté au
-    cours de votre vie en entreprise. Votre but, répondre au mission qui vous sont demandée tout en respectant les règles pour
+    cours de votre vie en entreprise. Votre but, répondre aux missions qui vous sont demandées tout en respectant les règles pour
     la sécurité du numérique.</p>
   <form>
     <!--type="submit" formaction="https://fr.w3docs.com/"-->
-    <button >Cliquez sur moi</button>
+      <button type="button" class="btn btn-danger">Commencez la partie</button>
   </form>
 </body>
 <!-- Ajout des librairies JS -->
