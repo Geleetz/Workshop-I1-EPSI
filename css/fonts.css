@@ -3,6 +3,6 @@
 	src:  url("../font/dogicapixel.ttf");
 }
 
-body {
+.pixel-font {
 	font-family: 'dogicapixel';
 }
