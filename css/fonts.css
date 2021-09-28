@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'dogicapixel';
-	src:  url("../font/dogicapixel.ttf");
+	font-family: 'pixelfont';
+	src:  url("../font/pixelfont.ttf");
 }
 
 .pixel-font {
-	font-family: 'dogicapixel';
+	font-family: 'pixelfont';
 }
 
-/*body {
+.background {
 	background: url('../img/ecran.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-  }*/
+}

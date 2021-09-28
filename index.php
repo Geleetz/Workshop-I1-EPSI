@@ -13,8 +13,8 @@
   <title>Workshop - Accueil</title>
 </head>
 <body>
-<h2 class="text-center pixel-font" style="margin-top: 2%;">La cybersécurité au quotidien</h2>
-<div class="container">
+<h2 class="text-center" style="margin-top: 2%;">La cybersécurité au quotidien</h2>
+<div class="container border border-dark rounded">
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6" style="margin-left: auto; margin-right: auto;">
