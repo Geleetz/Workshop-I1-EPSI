@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <h2 class="text-center">Simulateur de vie professionnelle</h2>
-  <p class="text-justify">Vous incarnerez un employé dans une entreprise sur une journée ou une semaine durant laquelle vous allez être confronté à
+  <h1>La cybersécurité au quotidien de l'entreprise.</h1>
+  <p>Vous incarnez un employé dans une entreprise sur une journée/semaine durant laquelle vous allez être confonté à
     différentes situations. Celles-ci mettent en scène des aspects de la cybersécurité auxquels vous pouvez être confronté au
     cours de votre vie en entreprise. Votre but, répondre aux missions qui vous sont demandées tout en respectant les règles pour
     la sécurité du numérique.</p>
@@ -25,3 +25,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 </html>
+
+
