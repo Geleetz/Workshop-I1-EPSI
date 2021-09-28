@@ -1,7 +1,12 @@
-body {
-	background: url('../img/ecran_table.png') no-repeat center center fixed;
+div.ecran {
+    content:url('../img/fond_ecran_windows_xp.png');
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+	/*background: url('../img/fond_ecran_windows_xp.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+	background-size: 100%;
+	-o-background-size: cover;*/
 }
