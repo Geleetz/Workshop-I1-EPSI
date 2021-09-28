@@ -11,10 +11,10 @@
   </head>
   <body>
     <div class="container">
-      <img src="https://etam-groupe.com/wp-content/uploads/2020/06/Capture.jpg" class="img-rounded" alt="Cinque Terre">
+    <div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.webp');"></div>
       <div class="container">
         <div class="container">
-
+          <h3>VOILA<h3>
         </div>
       </div>
     </div>
