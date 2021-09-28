@@ -11,7 +11,7 @@
 
   </head>
   <body>
-    <div class="container" style="background-image: url('../img/ecran.png')">
+    <div class="background">
       <div class="container">
         <div class="container">
         </div>
