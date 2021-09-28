@@ -1,10 +1,10 @@
 @font-face {
-	font-family: 'dogicapixel';
-	src:  url("../font/dogicapixel.ttf");
+	font-family: 'pixelfont';
+	src:  url("../font/pixelfont.ttf");
 }
 
 .pixel-font {
-	font-family: 'dogicapixel';
+	font-family: 'pixelfont';
 }
 
 /*body {
