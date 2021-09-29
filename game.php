@@ -34,9 +34,9 @@
   </div>
   <div class='pc'>
     <div class='ecran'>
-      <div class='veille'></div>
-      <div class='mail'></div>
-      <div class='chrome'></div>
+      <button class='veille'></button>
+      <button class='mail'></button>
+      <button class='chrome'></button>
     </div>
   </div>
 </body>
