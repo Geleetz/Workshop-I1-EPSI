@@ -10,3 +10,21 @@ div.ecran {
 	background-size: 100%;
 	-o-background-size: cover;*/
 }
+
+.field {
+    min-width: 200px;
+    min-height: 30px;
+    margin: 10px;
+  }
+  
+  button {
+    height: 40px;
+    width: 200px;
+    outline: none;
+    background: white;
+    border: black solid 2px;
+  }
+  
+  button:active {
+    background: blue;
+  }
