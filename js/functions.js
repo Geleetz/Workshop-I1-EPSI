@@ -1,4 +1,3 @@
-//variables
 var quiz = [];
 quiz[0] = new Question("Vous trouvez une clé USB, que faites-vous avec ?", "Je la laisse ou je l'ai trouvé", "Je regarde son contenu", "Je la ramène aux objets perdus");
 quiz[1] = new Question("Vous voulez prendre votre pause café ...", "Vous mettez en veille votre poste puis vous prenez votre pause", "Vous demandez à un collègue de vous ramener un café", "Vous partez prendre votre pause");
@@ -24,20 +23,18 @@ function shuffle(o) {
 };
 
 function btnProvideQuestion() { 
-    var track=new Array();
-
-    var randomNumber = Math.floor(Math.random()*quiz.length);
+  var randomNumber = Math.floor(Math.random()*quiz.length);
 	randomQuestion = quiz[randomNumber]; 
-    answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
-    shuffle(answers);
+  answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
+  shuffle(answers);
   
-    document.getElementById("question").innerHTML= randomQuestion.question;
-    document.getElementById("answerA").value= answers[0];
-    document.getElementById("answerA").innerHTML= answers[0];
-    document.getElementById("answerB").value= answers[1];
-    document.getElementById("answerB").innerHTML= answers[1];
-    document.getElementById("answerC").value= answers[2];
-    document.getElementById("answerC").innerHTML= answers[2];
+  document.getElementById("question").innerHTML= randomQuestion.question;
+  document.getElementById("answerA").value= answers[0];
+  document.getElementById("answerA").innerHTML= answers[0];
+  document.getElementById("answerB").value= answers[1];
+  document.getElementById("answerB").innerHTML= answers[1];
+  document.getElementById("answerC").value= answers[2];
+  document.getElementById("answerC").innerHTML= answers[2];
 
 }
 
