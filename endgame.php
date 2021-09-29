@@ -13,7 +13,7 @@
 <div class="container w-50 h-100">
   <div class="col align-middle pt-5">
     <div class="row align-middle text-center">
-      <h2 class="text-center my-5" style="font-family: pixelfont; color: white; text-shadow: 5px 5px #000;">La cybersécurité au quotidien</h2>
+      <h2 class="text-center my-5" style="font-family: pixelfont; color: white;">La cybersécurité au quotidien</h2>
         <div class="container p-3 my-3 bg-white border border rounded w-75">
           <p style="margin-top: 2%; font-family: pixelfont;">(Texte pour fin)</p>
           <br>
