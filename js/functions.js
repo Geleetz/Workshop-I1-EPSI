@@ -73,6 +73,7 @@ function btnProvideQuestion() {
 
   if(isGameFinished()){
     gameReset();
+    window.location.href="endgame.php";
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
