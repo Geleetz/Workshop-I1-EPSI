@@ -19,6 +19,10 @@ body {
 	background-size: cover;
 }
 
+.btn-outline-primary{
+	padding-top: 2%;
+}
+
 .flex { display:flex;}
 
 
