@@ -49,6 +49,15 @@
   </div>
   <div class='pc'>
     <div class='ecran'>
+      <div class="outlook">
+        <button class="mail1 open"></button>
+        <button class="mail2 open"></button>
+        <button class="mail3 open"></button>
+        <button class="mail4 open"></button>
+        <button class="mail5 open"></button>
+        <button class="mail6 open"></button>
+        <h2 id="mailcontent" class="mailcontent"></h2>
+      </div>
       <button class='veille'></button>
       <button class='mail'></button>
       <button class='chrome'></button>

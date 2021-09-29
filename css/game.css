@@ -99,3 +99,20 @@ body {
     min-height: 30px;
     margin: 10px;
   }
+
+.outlook{
+    position: absolute;
+    background: url('../img/Mail/outlook_structure.png');
+    border: none;
+height: 80%;
+width: 100vh;
+object-fit: cover;
+top: 6%;
+left: 6vh;
+background-size: auto 100%;
+background-repeat: no-repeat;
+}
+
+.mail1 {
+
+}
