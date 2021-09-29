@@ -35,12 +35,16 @@
   <div class='pc'>
     <div class='ecran'>
       <div class="outlook">
-        <button class="mail1 open"></button>
-        <button class="mail2 open"></button>
-        <button class="mail3 open"></button>
-        <button class="mail4 open"></button>
-        <button class="mail5 open"></button>
-        <button class="mail6 open"></button>
+        <div class="maillist">
+          <button class="mails newmail"></button>
+          <button class="mails opennedmail"></button>
+          <button class="mails opennedmail"></button>
+          <button class="mails opennedmail"></button>
+          <button class="mails opennedmail"></button>
+          <button class="mails opennedmail"></button>
+        </div>
+        <button class="fishing"></button>
+        <button class="exitbutton"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>
       </div>
       <button class='veille'></button>

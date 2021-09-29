@@ -104,24 +104,68 @@ body {
     position: absolute;
     background: url('../img/Mail/outlook_structure.png');
     border: none;
-height: 80%;
-width: 100vh;
-object-fit: cover;
-top: 6%;
-left: 6vh;
-background-size: auto 100%;
-background-repeat: no-repeat;
-}
-
-.mail1 {
-    position: absolute;
-    background: url('../img/Mail/mail_disabled.png');
-    border: none;
-    height: 15%;
-width: 30vh;
-object-fit: cover;
-top: 22.5%;
-left: 0.3vh;
+    height: 80%;
+    width: 81%;
+    object-fit: cover;
+    top: 6%;
+    left: 6vh;
     background-size: auto 100%;
     background-repeat: no-repeat;
+}
+
+.opennedmail{
+    background: url('../img/Mail/mail_disabled.png');
+    object-fit: cover;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.newmail{
+    background: url('../img/Mail/mail_selectionner.png');
+    object-fit: cover;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.maillist {
+    position: absolute;
+    height: 75.7%;
+    width: 25.7vh;
+    top: 23.5%;
+    left: 0.8vh;
+}
+
+.mailcontent{
+    height: 39vh;
+    width: 61.5vh;
+    left: 27vh;
+    position: absolute;
+    top: 14.5vh;
+}
+
+.mails {
+    height: 14.7%;
+    width: 25.6vh;
+}
+
+.fishing {
+    height: 4.5vh;
+    width: 5.5vh;
+    left: 83vh;
+    position: absolute;
+    top: 4vh;
+    border: none;
+    background: none;
+}
+
+.exitbutton{
+    height: 3vh;
+    width: 4vh;
+    right: 0.5vh;
+    position: absolute;
+    top: 0.5vh;
+    border: none;
+    background: none;
 }
