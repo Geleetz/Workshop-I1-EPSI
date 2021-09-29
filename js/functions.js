@@ -1,4 +1,3 @@
-//variables
 var quiz = [];
 quiz[0] = new Question(
   "Vous trouvez une clé USB, que faites-vous avec ?",
@@ -69,13 +68,12 @@ function gameReset() {
   currentScore=0;
 }
 
-
-
 function btnProvideQuestion() {
   var track = new Array();
 
   if(isGameFinished()){
     gameReset();
+    window.location.href="endgame.php";
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
