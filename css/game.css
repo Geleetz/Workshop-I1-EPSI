@@ -57,7 +57,8 @@
 
 .mail {
     position: absolute;
-    background-image: url('../img/mail.png');
+    background: url('../img/mail.png');
+    border: none;
     height: 7%;
     width: 7vh; /*7*/
     object-fit: cover;
@@ -69,7 +70,8 @@
 
 .chrome {
     position: absolute;
-    background-image: url('../img/chrome.png');
+    background: url('../img/chrome.png');
+    border: none;
     height: 7%;
     width: 7vh; /*7*/
     object-fit: cover;
