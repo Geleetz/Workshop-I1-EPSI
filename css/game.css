@@ -1,14 +1,89 @@
-div.ecran {
-    content:url('../img/fond_ecran_windows_xp.png');
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-	/*background: url('../img/fond_ecran_windows_xp.png') no-repeat center center fixed;
+.ecran {
+    position: absolute;
+    width: 110.5vh;
+    height: 69%;
+    top: 8%;
+    left: 36.5vh;
+    overflow: hidden;
+    max-width: -moz-available;
+    /*margin: auto;
+	background: url('../img/fond_ecran_windows_xp.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: 100%;
 	-o-background-size: cover;*/
+}
+
+.pc {
+    background-image: url('../img/pc.png');
+    height: 100vh;
+    /*width: 100vw;*/
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.veille {
+    position: absolute;
+    background-image: url('../img/Veille.png');
+    height: 7%;
+    width: 7vh; /*7*/
+    object-fit: cover;
+    bottom: 1%;
+    left: 4vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.mail {
+    position: absolute;
+    background-image: url('../img/mail.png');
+    height: 7%;
+    width: 7vh; /*7*/
+    object-fit: cover;
+    bottom: 1%;
+    left: 11vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.chrome {
+    position: absolute;
+    background-image: url('../img/chrome.png');
+    height: 7%;
+    width: 7vh; /*7*/
+    object-fit: cover;
+    bottom: 1.2%;
+    left: 19vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color:rgb(220, 220, 220);
+}
+
+.sidebar {
+	position: absolute;
+    top: 7vh;
+    bottom: 20vh;
+    left: 0;
+    /*padding: 58px 0 0;*/
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 28vh;
+    z-index: 600;
+  }
+
+#sidebarMenu button {
+    font-size: 3vh;
+}
+
+#sidebarMenu li{
+    font-size: 2.5vh;
+}
+
+#sidebarMenu ul{
+    padding-left: 3vh;
 }
 
 .field {
