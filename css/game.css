@@ -23,9 +23,29 @@
     overflow: hidden;
 }
 
+.coffee {
+    background-image: url('../img/coffee.png');
+    position: absolute;
+    width: 30vh;
+    height: 42%;
+    top: 58vh;
+    left: 135vh;
+    background-size: auto 100%;
+}
+
+.cleUSB {
+    background-image: url('../img/usb.png');
+    position: absolute;
+    width: 20vh;
+    height: 10%;
+    top: 90vh;
+    left: 30vh;
+    background-size: auto 100%;
+}
+
 .veille {
     position: absolute;
-    background: url('../img/Veille.png');
+    background: url('../img/power.png');
     border: none;
     height: 7%;
     width: 7vh; /*7*/
@@ -62,6 +82,18 @@
     background-repeat: no-repeat;
 }
 
+.horloge {
+    position: absolute;
+    background-image: url('../img/horloge_v3.png');
+    height: 7%;
+    width: 7vh;
+    object-fit: cover;
+    bottom: 1.3%;
+    left: 102.5vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
 body {
     background-color:rgb(220, 220, 220);
 }
@@ -70,19 +102,19 @@ body {
 	position: absolute;
     top: 7vh;
     /*bottom: 20vh;*/
-    left: 0;
+    right: 3.5vh;
     /*padding: 58px 0 0;*/
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 28vh;
+    width: 40vh;
     z-index: 600;
   }
 
 #sidebarMenu button {
-    font-size: 3vh;
+    font-size: 2.5vh;
 }
 
 #sidebarMenu li{
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 
 #sidebarMenu ul{
