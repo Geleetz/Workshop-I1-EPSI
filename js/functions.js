@@ -69,9 +69,7 @@ function gameReset() {
 }
 
 function btnProvideQuestion() {
-  var track = new Array();
-
-  if (isGameFinished()) {
+  if(isGameFinished()){
     gameReset();
     //$.post("endgame.php",{ score: currentScore});
     window.location.href="endgame.php";
@@ -90,8 +88,7 @@ function btnProvideQuestion() {
   ];
   shuffle(answers);
 
-  document.getElementById("current-mission").innerHTML =
-    randomQuestion.question;
+  document.getElementById("current-mission").innerHTML = randomQuestion.question;
   document.getElementById("first-answer").innerHTML = answers[0];
   document.getElementById("second-answer").innerHTML = answers[1];
   document.getElementById("third-answer").innerHTML = answers[2];
@@ -111,7 +108,6 @@ function answerA_clicked() {
   var answerA = document.getElementById("answerA").value;
   checkAnswer(answerA);
 }
-
 function answerB_clicked() {
   var answerB = document.getElementById("answerB").value;
   checkAnswer(answerB);
