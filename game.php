@@ -33,10 +33,13 @@
     </div>
   </div>
   <div class='pc'>
+    <div class='cleUSB'></div>
+    <div class='coffee'></div>
     <div class='ecran'>
-      <button class='veille'></button>
-      <button class='mail'></button>
-      <button class='chrome'></button>
+      <div class='veille'></div>
+      <div class='mail'></div>
+      <div class='chrome'></div>
+      <div class='horloge'></div>
     </div>
   </div>
 </body>
@@ -62,5 +65,4 @@
   <div class="field">Score</div>
   <div id="score" class="field">0</div>
 </div>
-
 </html>
