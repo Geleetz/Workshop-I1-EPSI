@@ -43,9 +43,6 @@
           <div class="modal-content">
             <div class="modal-body">
               <p style="margin-top: 2%; font-family: pixelfont;">
-                <span class="material-icons-outlined">
-                  done_outline
-                </span>
                 Qui êtes-vous ? 
                 <br> 
                 Vous êtes un employé d'une entreprise d'informatique, vous serez plongé dans une de vos journées quotidiennes durant laquelle vous allez être confronté à

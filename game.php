@@ -30,15 +30,28 @@
         </div>
       </div>
     </div>
-    <div class='pc'>
-      <div class='cleUSB'></div>
-      <div class='coffee'></div>
-      <div class='ecran'>
-        <div class='veille'></div>
-        <div class='mail'></div>
-        <div class='chrome'></div>
-        <div class='horloge'></div>
+  </div>
+  <div class='pc'>
+    <div class='cleUSB'></div>
+    <div class='coffee'></div>
+    <div class='ecran'>
+      <div class="outlook">
+        <div class="maillist">
+          <button class="mails newmail"></button>
+          <button class="mails opennedmail"></button>
+          <button class="mails opennedmail"></button>
+          <button class="mails opennedmail"></button>
+          <button class="mails opennedmail"></button>
+          <button class="mails opennedmail"></button>
+        </div>
+        <button class="fishing"></button>
+        <button class="exitbutton"></button>
+        <h2 id="mailcontent" class="mailcontent"></h2>
       </div>
+      <button class='veille'></button>
+      <button class='mail'></button>
+      <button class='chrome'></button>
+      <div class='horloge'></div>
     </div>
   </body>
   <!-- Ajout des librairies JS -->
