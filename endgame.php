@@ -18,6 +18,9 @@
           <p style="margin-top: 2%; font-family: pixelfont;">(Texte pour fin)</p>
           <br>
           <p style="margin-top: 2%; font-family: pixelfont;">Score : </p>
+          <?php $score=$_POST["score"];
+          echo $score;
+          ?>
           <br>
           <p style="margin-top: 2%; font-family: pixelfont;">(Description + information complémentaire cad liens)</p>
           <div class="d-grid gap-2 mx-auto" style="margin: 2%;">
