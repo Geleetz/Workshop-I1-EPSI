@@ -15,11 +15,14 @@
         <div class="row align-middle text-center">
           <h2 class="text-center my-5" style="font-family: pixelfont; color: white;">La cybersécurité au quotidien</h2>
             <div class="container p-3 my-3 bg-white border border-dark rounded w-75">
-              <p style="margin-top: 2%; font-family: pixelfont;">(Texte pour fin)</p>
+              <p style="margin-top: 2%; font-family: pixelfont;">(Message lié au score) <script></script></p>
               <br>
-              <p style="margin-top: 2%; font-family: pixelfont;">Score : </p>
+              <p style="margin-top: 2%; font-family: pixelfont;">Votre score est : (score)<script></script></p>
               <br>
-              <p style="margin-top: 2%; font-family: pixelfont;">(Description + information complémentaire cad liens)</p>
+              <p style="margin-top: 2%; font-family: pixelfont;">(Description lié au score) <script></script>
+              <br>
+              Liens utiles : 
+              </p>
               <div class="d-grid gap-2 mx-auto" style="margin: 2%;">
                 <button style="margin: 2%;" onclick='window.location.href="index.php"' type="button" class="btn btn-outline-primary">Retourner à l'écran d'accueil</button>
               </div>
