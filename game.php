@@ -22,7 +22,7 @@
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMissions">
-          <div class="accordion-body">
+          <div class="accordion-body responsivepadding">
             <ul>
               <li>Tâche 1</li>
               <li>Tâche 2</li>
@@ -37,7 +37,7 @@
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionMissions">
-          <div class="accordion-body">
+          <div class="accordion-body responsivepadding">
             <ul>
               <li>Tâche 1</li>
               <li>Tâche 2</li>
