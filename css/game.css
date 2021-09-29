@@ -23,9 +23,29 @@
     overflow: hidden;
 }
 
+.coffee {
+    background-image: url('../img/coffee.png');
+    position: absolute;
+    width: 30vh;
+    height: 42%;
+    top: 58vh;
+    left: 135vh;
+    background-size: auto 100%;
+}
+
+.cleUSB {
+    background-image: url('../img/usb.png');
+    position: absolute;
+    width: 20vh;
+    height: 10%;
+    top: 90vh;
+    left: 30vh;
+    background-size: auto 100%;
+}
+
 .veille {
     position: absolute;
-    background-image: url('../img/Veille.png');
+    background-image: url('../img/power.png');
     height: 7%;
     width: 7vh; /*7*/
     object-fit: cover;
@@ -55,6 +75,18 @@
     object-fit: cover;
     bottom: 1.2%;
     left: 19vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.horloge {
+    position: absolute;
+    background-image: url('../img/horloge_v3.png');
+    height: 7%;
+    width: 7vh;
+    object-fit: cover;
+    bottom: 1.3%;
+    left: 102.5vh;
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
