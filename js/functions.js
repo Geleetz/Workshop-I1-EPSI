@@ -133,5 +133,7 @@ function checkAnswer(answer) {
     btnProvideQuestion();
   } else {
     adjustScore(false);
+    
+    btnProvideQuestion();
   }
 }
