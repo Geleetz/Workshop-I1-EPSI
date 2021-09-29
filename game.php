@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+  <div id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="accordion" id="accordionMissions">
       <div class="accordion-item">
         <h2 class="accordion-header" id="firstMission">
@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </div>
   <div class='pc'>
     <div class='ecran'>
       <div class='veille'></div>
