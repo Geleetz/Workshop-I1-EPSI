@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-  <button class="ignorer" onclick="answerA_clicked()">Ignorer</button>
+  <button class="ignorer" onclick="answerA_clicked()" style="font-family: pixelfont;">Ignorer</button>
   <div class='pc'>
     <button id="cleUSB" class='cleUSB' hidden onclick="answerC_clicked()"></button>
     <button id="portable" class='portable' hidden onclick="answerA_clicked()"></button>
@@ -39,14 +39,14 @@
     <!--hidden="hidden"-->
     <div class='ecran'>
       <button id="sleepscreen-button" class="ecranveille" hidden onclick="sleep('off')">
-        <h1 class="text-light" style="font-family: pixelfont;">Revenir sur le PC</h1>
+        <h1 class="text-light" style="font-family: pixelfont;" style="font-family: pixelfont;">Revenir sur le PC</h1>
       </button>
       <div id='outlook-window' class="outlook" hidden>
         <div class="maillist">
-          <button class="mails newmail" onclick="patronMail()">patron@mail.fr
+          <button class="mails newmail" onclick="patronMail()" style="font-family: pixelfont;">patron@mail.fr
             <!--<label class="expediteurPatron">patron@mail.fr</label>-->
           </button>
-          <button class="mails opennedmail" onclick="sylvieMail()">sylvie.officielle@mail.fr
+          <button class="mails opennedmail" onclick="sylvieMail()" style="font-family: pixelfont;">sylvie.officielle@mail.fr
             <!--<label class="expediteurSylvie">sylvie@mail.fr</label>-->
           </button>
           <button class="mails opennedmail"></button>
@@ -55,15 +55,15 @@
           <button class="mails opennedmail"></button>
         </div>
         <button class="fishing"></button>
-        <label class="expediteur">Expéditeur :
+        <label class="expediteur" style="font-family: pixelfont; margin-top: 1%;">Expéditeur :
           <label id="expediteurValue"></label>
         </label>
-        <label class="objet">Objet :
+        <label class="objet" style="font-family: pixelfont; margin-top: 1%;">Objet :
           <label id="objetValue"></label>
         </label>
-        <label class="contenue" id="contenue">
+        <label class="contenue" id="contenue" style="font-family: pixelfont; margin-top: 1%;">
         </label>
-        <button id="lien"></button>
+        <button id="lien" style="font-family: pixelfont;"></button>
 
         <button class="exitbutton" onclick="hideWindow('outlook-window')"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>
