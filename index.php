@@ -13,8 +13,8 @@
     <div class="container w-50 h-100" style="color: white;">
       <div class="col align-middle pt-5">
         <div class="row align-middle text-center">
-          <h2 class="text-center my-5" style="font-family: pixelfont;">La cybersécurité au quotidien</h2>
-            <div class="container p-3 my-3 bg-white border border-dark rounded w-50">
+          <h2 class="text-center my-5" style="font-family: pixelfont; text-shadow: 5px 5px #000;">La cybersécurité au quotidien</h2>
+            <div class="container p-3 my-3 bg-white border rounded w-50">
             <div class="d-grid gap-2 mx-auto" style="margin: 2%;">
                 <button style="margin: 2%; padding-top: 4%;" onclick='window.location.href="game.php"' type="button" class="btn btn-outline-primary">Lancer la partie</button>
                 <button style="margin: 2%; padding-top: 4%;" type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#rulesmodal">Lire les règles</button>
