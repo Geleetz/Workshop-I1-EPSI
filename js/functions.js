@@ -108,7 +108,7 @@ function btnProvideQuestion() {
       hideButton("portable");
       break;
   }
-  shuffle(answers);
+  // shuffle(answers);
 
   document.getElementById("current-mission").innerHTML = randomQuestion.question;
   document.getElementById("first-answer").innerHTML = answers[0];
