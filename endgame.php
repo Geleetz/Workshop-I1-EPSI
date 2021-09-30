@@ -56,6 +56,10 @@
                 echo "<li><h2>Réponse donnée: ".$answer."</h2></li>";
               }
               echo print_r($_POST);
+              echo "decode"+json_decode($_POST["json"]);
+              echo "questions"+$json["questions"];
+              echo "answers"+$json["answers"];
+              echo "answer"+$json["answer"];
             ?>
           </div>
         </div>
