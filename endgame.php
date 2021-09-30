@@ -20,11 +20,11 @@
           <p style="margin-top: 2%; font-family: pixelfont;">(Message lié au score) <script></script>
           </p>
           <br>
-          <p style="margin-top: 2%; font-family: pixelfont;">Votre score est : (score)<script></script>
+          <p style="margin-top: 2%; font-family: pixelfont;">Votre score est :
+            <?php $score = $_POST["score"];
+            echo $score;
+            ?><script></script>
           </p>
-          <?php $score = $_POST["score"];
-          echo $score;
-          ?>
           <br>
           <p style="margin-top: 2%; font-family: pixelfont;">(Description lié au score) <script></script>
             <br>
