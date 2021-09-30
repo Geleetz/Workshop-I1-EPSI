@@ -79,7 +79,8 @@ function btnProvideQuestion() {
   if(isGameFinished()){
     var request = new XMLHttpRequest();
     request.open('GET', 'https://scuisond.fr/endgame.php');
-    var json['questions'] = questions;
+    var json = [];
+    json['questions'] = questions;
     json['answers'] = answer;
     json['score'] = score;
     gameReset();
