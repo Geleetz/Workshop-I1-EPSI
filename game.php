@@ -49,9 +49,18 @@
         <button class="exitbutton"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>
       </div>
+      <div class="chrome">
+        <div class="chromeexit"></div>
+        <div class="amazoun">
+          <div class="crayon"></div>
+        </div>
+        <div class="amazounachat">
+          <div class="achat"></div>
+        </div>
+      </div>
       <button class='veille'></button>
       <button class='mail'></button>
-      <button class='chrome'></button>
+      <button class='chromeicon'></button>
       <div class='horloge'></div>
     </div>
     <div class="flex">
