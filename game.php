@@ -14,16 +14,16 @@
     <div id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
       <div class="accordion" id="accordionMissions">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="firstMission">
+          <h2 class="accordion-header" id="firstMission" style="font-family: pixelfont;">
             <button id="current-mission" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMissions">
             <div class="accordion-body responsivepadding">
               <ul>
-                <li id="first-answer"></li>
-                <li id="second-answer"></li>
-                <li id="third-answer"></li>
+                <li id="first-answer" style="font-family: pixelfont;"></li>
+                <li id="second-answer" style="font-family: pixelfont;"></li>
+                <li id="third-answer" style="font-family: pixelfont;"></li>
               </ul>
             </div>
           </div>
@@ -53,27 +53,27 @@
       <button class='chrome'></button>
       <div class='horloge'></div>
     </div>
+    <div class="flex">
+      <div class="field">Question</div>
+      <div id="question" class="field"></div>
+    </div>
+    <div class="flex">
+      <button id="answerA" onclick="answerA_clicked()"></button>
+    </div>
+    <br>
+    <div class="flex">
+      <button id="answerB" onclick="answerB_clicked()"></button>
+    </div>
+    <br>
+    <div class="flex">
+      <button id="answerC" onclick="answerC_clicked()"></button>
+    </div>
+    <div class="flex">
+      <div class="field">Score</div>
+      <div id="score" class="field">0</div>
+    </div>
   </body>
   <!-- Ajout des librairies JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/functions.js"></script>
-  <div class="flex">
-    <div class="field">Question</div>
-    <div id="question" class="field"></div>
-  </div>
-  <div class="flex">
-    <button id="answerA" onclick="answerA_clicked()"></button>
-  </div>
-  <br>
-  <div class="flex">
-    <button id="answerB" onclick="answerB_clicked()"></button>
-  </div>
-  <br>
-  <div class="flex">
-    <button id="answerC" onclick="answerC_clicked()"></button>
-  </div>
-  <div class="flex">
-    <div class="field">Score</div>
-    <div id="score" class="field">0</div>
-  </div>
 </html>

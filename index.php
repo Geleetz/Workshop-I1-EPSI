@@ -29,7 +29,15 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-body">
-              <p style="margin-top: 2%; font-family: pixelfont;">(Voir pour les remplir)</p>
+              <p style="margin-top: 2%; font-family: pixelfont;">
+                Quel est le but du jeu ? 
+                <br> 
+                Le but de notre jeu est de donner de bonnes pratiques de cyber-sécurité aux utilisateurs. C'est un enjeu actuel, de plus en plus de personnes disposent d'un ordinateur mais peu savent se protéger des potentielles menaces. Notre objectif est de vous montrer à travers d'un jeu comment bien s'y prendre.  
+                <br><br> 
+                Qui peut y jouer ? 
+                <br> 
+                Le jeu est ouvert à un public très large pour que ce soit d'un côté "éducatif" et d'un autre agréable à jouer pour l'utilisateur.
+              </p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
@@ -52,14 +60,6 @@
                 <br> 
                 Votre but, répondre aux missions qui vous sont demandées tout en respectant les règles et le temps limitée de la journée pour
                 la sécurité du numérique. 
-                <br><br> 
-                Quel est le but du jeu ? 
-                <br> 
-                Le but de notre jeu est de donner de bonnes pratiques de cyber-sécurité aux utilisateurs. C'est un enjeu actuel, de plus en plus de personnes disposent d'un ordinateur mais peu savent se protéger des potentielles menaces. Notre objectif est de vous montrer à travers d'un jeu comment bien s'y prendre.  
-                <br><br> 
-                Qui peut y jouer ? 
-                <br> 
-                Le jeu est ouvert à un public très large pour que ce soit d'un côté "éducatif" et d'un autre agréable à jouer pour l'utilisateur.
                 <br><br>
                 Ou peut-on y jouer ?
                 <br>
