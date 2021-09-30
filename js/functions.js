@@ -17,25 +17,6 @@ quiz[2] = new Question(
   "Ignorer l'email", // Cliquer sur le bouton ignorer; Score: +0
   "Cliquer sur le lien et verser l'argent demandé" // Cliquer sur le lien du mail; Score: -1
 );
-quiz[3]=new Question(
-  "Une collègue vous demande d'acheter des fournitures en lignes en vous fournissant un lien:",
-  "Aller chercher ces fournitures en ligne par vos propre moyens",
-  "Ne pas acheter les fournitures",
-  "Utiliser le lien fourni pour acheter les fourniture",
-);
-
-var mail = [];
-mail[0] = new Mail(
-  "patron@mail.fr",
-  "(objet patron)",
-  "(contenue patron)"
-);
-mail[1] = new Mail(
-  "sylvie@mail.fr",
-  "(objet sylvie)",
-  "(contenue sylvie)"
-);
-
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
@@ -64,12 +45,6 @@ function Question(
   this.wrongAnswer1 = wrongAnswer1;
   this.wrongAnswer2 = wrongAnswer2;
   this.alreadyAsked = false;
-}
-
-function Mail(expediteur, objet, contenue){
-  this.expediteur = expediteur;
-  this.objet = objet;
-  this.contenue = contenue;
 }
 
 function shuffle(o) {
@@ -113,8 +88,9 @@ function btnProvideQuestion() {
     json['score'] = JSON.stringify(currentScore);
     console.log(JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
     gameReset();
+    var json = JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore});
     var form = $('<form action="' + 'https://scuisond.fr/endgame.php' + '" method="post">' +
-                  '<input type="text" name="json" value="' + JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}) + '" />' +
+                  '<input type="text" name="json" value="' + json + '" />' +
                   '</form>');
     $('body').append(form);
     form.submit();
@@ -239,16 +215,4 @@ function disableButton(buttonToDisable){
 
 function enableButton(buttonToEnable){
   document.getElementById(buttonToEnable).disabled=false;
-}
-
-function patronMail(){
-  document.getElementById("expediteurValue").innerHTML = mail[0].expediteur;
-  document.getElementById("objetValue").innerHTML = mail[0].objet;
-  document.getElementById("contenue").innerHTML = mail[0].contenue;
-}
-
-function sylvieMail(){
-  document.getElementById("expediteurValue").innerHTML = mail[1].expediteur;
-  document.getElementById("objetValue").innerHTML = mail[1].objet;
-  document.getElementById("contenue").innerHTML = mail[1].contenue;
 }
