@@ -118,15 +118,12 @@ function btnProvideQuestion() {
       })
     );
     gameReset();
-    $.post(
-      "https://scuisond.fr/endgame.php",
-      JSON.stringify({
-        questions: questions,
-        answers: totalanswers,
-        answer: totalanswer,
-        score: currentScore,
-      })
-    );
+    var json = JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore});
+    var form = $('<form action="' + 'https://scuisond.fr/endgame.php' + '" method="post">' +
+                  '<input type="text" name="json" value="' + json.replaceAll('"','\'') + '" />' +
+                  '</form>');
+    $('body').append(form);
+    form.submit();
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);

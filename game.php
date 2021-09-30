@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-  </div>
+  <button class="ignorer" onclick="answerA_clicked()">Ignorer</button>
   <div class='pc'>
     <button id="cleUSB" class='cleUSB' hidden onclick="answerC_clicked()"></button>
     <button id="portable" class='portable' hidden onclick="answerA_clicked()"></button>
