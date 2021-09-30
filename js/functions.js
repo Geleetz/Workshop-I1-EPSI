@@ -3,7 +3,7 @@ quiz[0] = new Question(
   "Vous trouvez une clé USB, que faites-vous avec ?",
   "Je la laisse ou je l'ai trouvé",
   "Je la ramène aux objets perdus",
-  "Je regarde son contenu",
+  "Je regarde son contenu"
 );
 quiz[1] = new Question(
   "Vous voulez prendre votre pause café ...",
@@ -86,6 +86,14 @@ function btnProvideQuestion() {
     randomQuestion.wrongAnswer1,
     randomQuestion.wrongAnswer2,
   ];
+  switch(randomNumber){
+    case 0:
+      showButton("cleUSB");
+      break;
+    case 1:
+      showButton("coffee");
+      break;
+  }
   shuffle(answers);
 
   document.getElementById("current-mission").innerHTML = randomQuestion.question;
@@ -138,6 +146,20 @@ function checkAnswer(answer) {
 function hideWindow(divToHide){
   document.getElementById(divToHide).style.display="none";
 }
+
 function showWindow(divToShow){
-  document.getElementById(divToShow).style.display='block';
+  var element=document.getElementById(divToShow);
+  if (element.style.display === "none"){
+    element.style.display="block";
+  }else{
+    element.style.display="none";
+  }
+}
+
+function hideButton(buttonToHide){
+  document.getElementById(buttonToHide).style.visibility = 'hidden';
+}
+
+function showButton(buttonToShow){
+  document.getElementById(buttonToShow).style.visibility = 'visible';
 }
