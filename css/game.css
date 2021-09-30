@@ -28,11 +28,12 @@
     position: absolute;
     border: none;
     object-fit: cover;
-    width: 30vh;
+    width: 27vh;
     height: 42%;
     top: 58vh;
-    left: 135vh;
+    left: 147vh;
     background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .cleUSB {
@@ -40,11 +41,12 @@
     position: absolute;
     border: none;
     object-fit: cover;
-    width: 20vh;
+    width: 27vh;
     height: 10%;
     top: 90vh;
     left: 30vh;
     background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .veille {
@@ -64,11 +66,11 @@
     position: absolute;
     background: url('../img/mail.png');
     border: none;
-    height: 7%;
-    width: 7vh; /*7*/
+    height: 6%;
+    width: 7vh;
     object-fit: cover;
-    bottom: 1%;
-    left: 11.5vh;
+    bottom: 1.8%;
+    left: 10.9vh;
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
