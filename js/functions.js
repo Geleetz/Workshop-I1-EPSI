@@ -17,6 +17,17 @@ quiz[2] = new Question(
   "Ignorer l'email", // Cliquer sur le bouton ignorer; Score: +0
   "Cliquer sur le lien et verser l'argent demandé" // Cliquer sur le lien du mail; Score: -1
 );
+var mail = [];
+mail[0] = new Mail(
+  "patron@mail.fr",
+  "(objet patron)",
+  "(contenue patron)"
+);
+mail[1] = new Mail(
+  "sylvie@mail.fr",
+  "(objet sylvie)",
+  "(contenue sylvie)"
+);
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
@@ -45,6 +56,12 @@ function Question(
   this.wrongAnswer1 = wrongAnswer1;
   this.wrongAnswer2 = wrongAnswer2;
   this.alreadyAsked = false;
+}
+
+function Mail(expediteur, objet, contenue){
+  this.expediteur = expediteur;
+  this.objet = objet;
+  this.contenue = contenue;
 }
 
 function shuffle(o) {
@@ -210,4 +227,16 @@ function disableButton(buttonToDisable){
 
 function enableButton(buttonToEnable){
   document.getElementById(buttonToEnable).disabled=false;
+}
+
+function patronMail(){
+  document.getElementById("expediteurValue").innerHTML = mail[0].expediteur;
+  document.getElementById("objetValue").innerHTML = mail[0].objet;
+  document.getElementById("contenue").innerHTML = mail[0].contenue;
+}
+
+function sylvieMail(){
+  document.getElementById("expediteurValue").innerHTML = mail[1].expediteur;
+  document.getElementById("objetValue").innerHTML = mail[1].objet;
+  document.getElementById("contenue").innerHTML = mail[1].contenue;
 }
