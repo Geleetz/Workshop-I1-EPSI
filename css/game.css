@@ -211,6 +211,30 @@ body {
     background: none;
 }
 
+.expediteur {
+    height: 3.5vh;
+    width: 54.5vh;
+    left: 27vh;
+    position: absolute;
+    top: 4.5vh;
+}
+
+.objet {
+    height: 3.5vh;
+    width: 54.5vh;
+    left: 27vh;
+    position: absolute;
+    top: 9.5vh;
+}
+
+.contenue {
+    height: 3.5vh;
+    width: 54.5vh;
+    left: 27vh;
+    position: absolute;
+    top: 14.5vh;
+}
+
 .exitbutton{
     height: 3vh;
     width: 4vh;

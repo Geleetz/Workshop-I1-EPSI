@@ -50,6 +50,9 @@
           <button class="mails opennedmail"></button>
         </div>
         <button class="fishing"></button>
+        <label class="expediteur">Expéditeur : (nom)</label>
+        <label class="objet">Objet : (objet)</label>
+        <label class="contenue">(contenue)</label>
         <button class="exitbutton" onclick="hideWindow('outlook-window')"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>
       </div>
