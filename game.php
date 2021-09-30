@@ -33,8 +33,8 @@
   </div>
   </div>
   <div class='pc'>
-    <button class='cleUSB'></button>
-    <button class='coffee'></button>
+    <button class='cleUSB' hidden="hidden"></button>
+    <button class='coffee' hidden="hidden"></button>
     <div class='ecran'>
       <div class="outlook">
         <div class="maillist">
