@@ -16,9 +16,9 @@
           <h2 class="text-center my-5" style="font-family: pixelfont;">La cybersécurité au quotidien</h2>
             <div class="container p-3 my-3 bg-white border border-dark rounded w-50">
             <div class="d-grid gap-2 mx-auto" style="margin: 2%;">
-                <button style="margin: 2%;" onclick='window.location.href="game.php"' type="button" class="btn btn-outline-primary">Lancer la partie</button>
-                <button style="margin: 2%;" type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#rulesmodal">Lire les règles</button>
-                <button style="margin: 2%;" type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#informationsmodal">A propos</button>
+                <button style="margin: 2%; padding-top: 4%;" onclick='window.location.href="game.php"' type="button" class="btn btn-outline-primary">Lancer la partie</button>
+                <button style="margin: 2%; padding-top: 4%;" type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#rulesmodal">Lire les règles</button>
+                <button style="margin: 2%; padding-top: 4%;" type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#informationsmodal">A propos</button>
               </div>
             </div>
           </div>
