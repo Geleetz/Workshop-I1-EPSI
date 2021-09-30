@@ -267,6 +267,8 @@ body {
 #lien{
     height: 4.5vh;
     width: 54.5vh;
+    border: none;
+    background-color: white;
     left: 30vh;
     position: absolute;
     top: 36.5vh;
