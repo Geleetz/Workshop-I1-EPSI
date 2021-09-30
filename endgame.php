@@ -16,14 +16,41 @@
       <div class="row align-middle">
         <h2 class="text-center my-5" style="font-family: pixelfont; color: white; text-shadow: 5px 5px #000;">La cybersécurité au quotidien</h2>
         <div class="container p-3 my-3 bg-white border border rounded w-75">
-          <?= 
-          $score = $_POST["score"];
-          ?>
+            <p style="margin-top: 2%; font-family: pixelfont;">
+              Vous avez peu d'expériences en sécurité, mais vous ne pouvez que vous améliorer !
+            </p>
+            <br>
+            <p style="margin-top: 2%; font-family: pixelfont;">Votre score est : <?= $_POST["score"]; ?></p>
+            <br>
+            <p style="margin-top: 2%; font-family: pixelfont;">Selon vos réponses, on peut voir que vous possédez des lacunes et il faudra faire attention à vous pour ne pas vous faire pièger. Voici quelques liens qui vous serons utiles pour poursuivre des formations ou avoir des conseilles ou règles concernant la cybersécurité :
+            <br><br>
+            https://pix.fr
+            <br>
+            https://www.cnil.fr/professionnel
+            <br>
+            https://www.ssi.gouv.fr
+            </p>
           <div class="d-grid gap-2 mx-auto" style="margin: 2%;">
             <button style="margin: 2%;" onclick='window.location.href="index.php"' type="button" class="btn btn-outline-primary">Retourner à l'écran d'accueil</button>
           </div>
           <div id="questionsreponses">
-            
+            <?php
+              $numquestion = 0;
+
+              $questions = $_POST["questions"];
+              $answers = $_POST["answers"];
+              $answer = $_POST["answer"];
+
+              foreach ($questions as $question) {
+                echo "<ul><li><h1>Question".$numquestion.": ".$question."</h1></li>";
+                $numanswer = 0;
+                foreach ($answers as $answer) {
+                  echo "<li><h2>Réponse ".$numanswer.": ".$question."</h2></li>";
+                  $numanswer++;
+                }
+                echo "<li><h2>Réponse donnée: ".$answer."</h2></li>";
+              }
+            ?>
           </div>
         </div>
       </div>
