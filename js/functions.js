@@ -139,5 +139,10 @@ function hideWindow(divToHide){
   document.getElementById(divToHide).style.display="none";
 }
 function showWindow(divToShow){
-  document.getElementById(divToShow).style.display='block';
+  var element=document.getElementById(divToShow);
+  if (element.style.display === "none"){
+    element.style.display="block";
+  }else{
+    element.style.display="none";
+  }
 }
