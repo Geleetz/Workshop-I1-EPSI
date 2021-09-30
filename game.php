@@ -36,6 +36,9 @@
     <button id="cleUSB" class='cleUSB' hidden="hidden"></button>
     <button id="coffee" class='coffee' hidden="hidden"></button>
     <div class='ecran'>
+      <button class="ecranveille">
+        <h1 class="text-light">Revenir sur le PC</h1>
+      </button>
       <div id='outlook-window' class="outlook">
         <div class="maillist">
           <button class="mails newmail"></button>
