@@ -139,6 +139,7 @@ body {
   }
 
 .outlook{
+	display: none;
     position: absolute;
     background: url('../img/Mail/outlook_structure.png');
     border: none;
@@ -209,6 +210,7 @@ body {
 }
 
 .chrome{
+	display: none;
     position: absolute;
     background: url('../img/Navigateur/navigateur.png');
     border: none;

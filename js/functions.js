@@ -155,7 +155,7 @@ function hideWindow(divToHide){
 
 function showWindow(divToShow){
   var element=document.getElementById(divToShow);
-  if (element.style.display === "none"){
+  if (element.style.display != "block"){
     element.style.display="block";
   }else{
     element.style.display="none";
