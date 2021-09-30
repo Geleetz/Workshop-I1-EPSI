@@ -80,9 +80,9 @@ function btnProvideQuestion() {
     var request = new XMLHttpRequest();
     request.open('POST', 'https://scuisond.fr/endgame.php');
     var json = [];
-    json['questions'] = questions;
-    json['answers'] = answer;
-    json['score'] = score;
+    json['questions'] = JSON.stringify(questions);
+    json['answers'] = JSON.stringify(answer);
+    json['score'] = JSON.stringify(score);
     gameReset();
     request.send(JSON.stringify(json));
   }
