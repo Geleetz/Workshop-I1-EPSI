@@ -36,6 +36,20 @@
     background-repeat: no-repeat;
 }
 
+.portable {
+    background: url('../img/portable.png');
+    visibility: visible;
+    position: absolute;
+    border: none;
+    object-fit: cover;
+    width: 27vh;
+    height: 42%;
+    top: 58vh;
+    left: 12vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
 .cleUSB {
     background: url('../img/usb.png');
     position: absolute;
