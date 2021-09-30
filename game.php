@@ -22,9 +22,9 @@
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMissions">
           <div class="accordion-body responsivepadding">
             <ul>
-              <li id="first-answer" ></li>
-              <li id="second-answer" ></li>
-              <li id="third-answer" ></li>
+              <li id="first-answer"></li>
+              <li id="second-answer"></li>
+              <li id="third-answer"></li>
             </ul>
           </div>
         </div>
@@ -33,19 +33,20 @@
   </div>
   </div>
   <div class='pc'>
-  <button id="cleUSB" class='cleUSB' hidden onclick="answerC_clicked()"></button>
-  <button id="portable" class='portable' hidden onclick="answerA_clicked()"></button>
-    <button id="coffee" class='coffee' hidden onclick="answerC_clicked()"></button><!--hidden="hidden"-->
+    <button id="cleUSB" class='cleUSB' hidden onclick="answerC_clicked()"></button>
+    <button id="portable" class='portable' hidden onclick="answerA_clicked()"></button>
+    <button id="coffee" class='coffee' hidden onclick="answerC_clicked()"></button>
+    <!--hidden="hidden"-->
     <div class='ecran'>
       <button id="sleepscreen-button" class="ecranveille" hidden onclick="sleep('off')">
         <h1 class="text-light" style="font-family: pixelfont;">Revenir sur le PC</h1>
       </button>
-      <div id='outlook-window' class="outlook" hidden >
+      <div id='outlook-window' class="outlook" hidden>
         <div class="maillist">
           <button class="mails newmail" onclick="patronMail()">patron@mail.fr
             <!--<label class="expediteurPatron">patron@mail.fr</label>-->
           </button>
-          <button class="mails opennedmail" onclick="sylvieMail()">sylvie@mail.fr
+          <button class="mails opennedmail" onclick="sylvieMail()">sylvie.officielle@mail.fr
             <!--<label class="expediteurSylvie">sylvie@mail.fr</label>-->
           </button>
           <button class="mails opennedmail"></button>
@@ -54,13 +55,16 @@
           <button class="mails opennedmail"></button>
         </div>
         <button class="fishing"></button>
-        <label class="expediteur">Expéditeur : 
+        <label class="expediteur">Expéditeur :
           <label id="expediteurValue"></label>
         </label>
         <label class="objet">Objet :
-        <label id="objetValue"></label>
+          <label id="objetValue"></label>
         </label>
-        <label class="contenue" id="contenue"></label>
+        <label class="contenue" id="contenue">
+        </label>
+        <button id="lien"></button>
+
         <button class="exitbutton" onclick="hideWindow('outlook-window')"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>
       </div>
@@ -98,9 +102,11 @@
       <div class="field">Score</div>
       <div id="score" class="field">0</div>
     </div>
+  </div>
 </body>
 <!-- Ajout des librairies JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/functions.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+
 </html>
