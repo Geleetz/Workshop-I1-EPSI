@@ -89,10 +89,15 @@ function btnProvideQuestion() {
   switch(randomNumber){
     case 0:
       showButton("cleUSB");
+      hideButton("coffee")
       break;
     case 1:
       showButton("coffee");
+      hideButton("cleUSB");
       break;
+    default:
+      hideButton("coffee")
+      hideButton("cleUSB");
   }
   shuffle(answers);
 
