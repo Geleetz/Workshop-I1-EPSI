@@ -180,6 +180,22 @@ body {
     border: none;
 }
 
+/*.expediteurPatron{
+    height: 3.5vh;
+    width: 25.5vh;
+    left: 0vh;
+    position: absolute;
+    top: 1vh;
+}
+
+.expediteurSylvie{
+    height: 3.5vh;
+    width: 25.5vh;
+    left: 0vh;
+    position: absolute;
+    top: 7.5vh;
+}*/
+
 .maillist {
     position: absolute;
     height: 75.7%;

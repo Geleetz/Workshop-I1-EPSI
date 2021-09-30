@@ -42,15 +42,19 @@
       </button>
       <div id='outlook-window' class="outlook" hidden >
         <div class="maillist">
-          <button class="mails newmail"></button>
-          <button class="mails opennedmail"></button>
+          <button class="mails newmail">patron@mail.fr
+            <!--<label class="expediteurPatron">patron@mail.fr</label>-->
+          </button>
+          <button class="mails opennedmail">sylvie@mail.fr
+            <!--<label class="expediteurSylvie">sylvie@mail.fr</label>-->
+          </button>
           <button class="mails opennedmail"></button>
           <button class="mails opennedmail"></button>
           <button class="mails opennedmail"></button>
           <button class="mails opennedmail"></button>
         </div>
         <button class="fishing"></button>
-        <label class="expediteur">Expéditeur : (nom)</label>
+        <label class="expediteur">Expéditeur : patron@mail.fr</label>
         <label class="objet">Objet : (objet)</label>
         <label class="contenue">(contenue)</label>
         <button class="exitbutton" onclick="hideWindow('outlook-window')"></button>
