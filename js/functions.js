@@ -169,3 +169,11 @@ function hideButton(buttonToHide){
 function showButton(buttonToShow){
   document.getElementById(buttonToShow).style.visibility = 'visible';
 }
+
+function sleep(onOrOff){
+  if(onOrOff=="on"){
+    document.getElementById("sleepscreen-button").style.visibility='visible';
+  }else if(onOrOff=="off"){
+    document.getElementById("sleepscreen-button").style.visibility='hidden';
+  }
+}
