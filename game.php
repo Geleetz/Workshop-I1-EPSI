@@ -22,9 +22,9 @@
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMissions">
           <div class="accordion-body responsivepadding">
             <ul>
-              <li id="first-answer" style="font-family: pixelfont;"></li>
-              <li id="second-answer" style="font-family: pixelfont;"></li>
-              <li id="third-answer" style="font-family: pixelfont;"></li>
+              <li id="first-answer" ></li>
+              <li id="second-answer" ></li>
+              <li id="third-answer" ></li>
             </ul>
           </div>
         </div>
