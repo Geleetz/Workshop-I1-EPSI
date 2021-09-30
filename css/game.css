@@ -271,6 +271,7 @@ body {
     position: absolute;
     top: 36.5vh;
     font-size: 1.7vh;
+    z-index:10;
 }
 
 .exitbutton{
