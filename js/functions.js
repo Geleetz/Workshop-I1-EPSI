@@ -1,8 +1,8 @@
 var quiz = [];
 quiz[0] = new Question(
   "Vous trouvez une clé USB, que faites-vous avec ?",
-  "Ignorer la clé USB", // Cliquer sur un bouton ignorer; Score: +0
   "Ramener la clé aux objets perdus", // Cliquer sur le bouton; Score: +1
+  "Ignorer la clé USB", // Cliquer sur un bouton ignorer; Score: +0
   "Regarder son contenu" // Cliquer sur l'image clé USB; Score: -1
 );
 quiz[1] = new Question(
@@ -127,6 +127,7 @@ function btnProvideQuestion() {
   // shuffle(answers);
 
   document.getElementById("current-mission").innerHTML = randomQuestion.question;
+  document.getElementById("current-mission").value = randomQuestion.question;
   document.getElementById("first-answer").innerHTML = answers[0];
   document.getElementById("second-answer").innerHTML = answers[1];
   document.getElementById("third-answer").innerHTML = answers[2];

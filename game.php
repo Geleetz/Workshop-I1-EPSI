@@ -33,9 +33,9 @@
   </div>
   </div>
   <div class='pc'>
-  <button id="cleUSB" class='cleUSB' hidden onclick="answerA_clicked()"></button>
+  <button id="cleUSB" class='cleUSB' hidden onclick="answerC_clicked()"></button>
   <button id="portable" class='portable' hidden onclick="answerA_clicked()"></button>
-    <button id="coffee" class='coffee' hidden onclick="answerA_clicked()"></button><!--hidden="hidden"-->
+    <button id="coffee" class='coffee' hidden onclick="answerC_clicked()"></button><!--hidden="hidden"-->
     <div class='ecran'>
       <button id="sleepscreen-button" class="ecranveille" hidden onclick="sleep('off')">
         <h1 class="text-light" style="font-family: pixelfont;">Revenir sur le PC</h1>
@@ -50,11 +50,15 @@
           <button class="mails opennedmail"></button>
         </div>
         <button class="fishing"></button>
+        <label class="expediteur">Expéditeur : (nom)</label>
+        <label class="objet">Objet : (objet)</label>
+        <label class="contenue">(contenue)</label>
         <button class="exitbutton" onclick="hideWindow('outlook-window')"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>
       </div>
       <div id="chrome-window" class="chrome" hidden>
         <button class="chromeexit" onclick="hideWindow('chrome-window')"></button>
+        <label class="url">https://www.amazoun.fr</label>
         <div class="amazoun">
           <button class="crayon" onclick="showWindow('amazoun-achat')"></button>
         </div>
@@ -62,7 +66,7 @@
           <button class="achat"></button>
         </div>
       </div>
-      <button class='veille' onclick="sleep('on')"></button>
+      <button class='veille' onclick="sleep('on'); if(document.getElementById('current-mission').value==quiz[1].question){answerA_clicked();}"></button>
       <button class='mail' onclick="showWindow('outlook-window')"></button>
       <button class='chromeicon' onclick="showWindow('chrome-window')"></button>
       <div class='horloge'></div>

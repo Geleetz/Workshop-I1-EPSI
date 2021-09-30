@@ -211,6 +211,30 @@ body {
     background: none;
 }
 
+.expediteur {
+    height: 3.5vh;
+    width: 54.5vh;
+    left: 27vh;
+    position: absolute;
+    top: 4.5vh;
+}
+
+.objet {
+    height: 3.5vh;
+    width: 54.5vh;
+    left: 27vh;
+    position: absolute;
+    top: 9.5vh;
+}
+
+.contenue {
+    height: 3.5vh;
+    width: 54.5vh;
+    left: 27vh;
+    position: absolute;
+    top: 14.5vh;
+}
+
 .exitbutton{
     height: 3vh;
     width: 4vh;
@@ -232,6 +256,14 @@ body {
     left: 9vh;
     background-size: auto 100%;
     background-repeat: no-repeat;
+}
+
+.url{
+    position: absolute;
+    height: 6.6%;
+    width: 26%;
+    top: 10.7%;
+    left: 16vh;
 }
 
 .amazoun{
