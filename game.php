@@ -63,7 +63,7 @@
         </label>
         <label class="contenue" id="contenue" style="font-family: pixelfont; margin-top: 1%;">
         </label>
-        <button id="lien" style="font-family: pixelfont;"></button>
+        <button id="lien" style="font-family: pixelfont;" onclick="if(document.getElementById('current-mission').value==quiz[2].question){answerC_clicked();}"></button>
 
         <button class="exitbutton" onclick="hideWindow('outlook-window')"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>

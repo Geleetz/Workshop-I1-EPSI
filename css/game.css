@@ -274,6 +274,7 @@ body {
     top: 36.5vh;
     font-size: 1.7vh;
     z-index:10;
+    object-fit: cover;
 }
 
 .exitbutton{

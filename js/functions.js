@@ -28,13 +28,13 @@ var mail = [];
 mail[0] = new Mail(
   "patron@mail.fr",
   "Virement urgent!!!",
-  "J'aurai besoin que vous me fassié un virement de 2000€ au plus vite, veuillez cliquer sur ce lien pour le faire!",
-  "www.ce-lien-n-est-pas-frauduleux-je-vous-assure.cpadlol"
+  "J'aurai besoin que vous me fassié un virement de 2000€ au plus vite, veuiller cliquer sur se lien pour le faire!",
+  "www.ce-lien-n-est-pas-frauduleux.cpadlol"
 );
 mail[1] = new Mail(
   "sylvie.officielle@mail.fr",
   "Achat de fourniture",
-  "Bonjour, j'aurai besoin que vous vous occupiez de renouveler le stock de crayon.\n Ci-joint un lien",
+  "Bonjour, j'aurai besoin que vous vous occupiez de renouveler le stock de crayon.<br>Ci-joint un lien où j'ai trouvé de quoi remplir nos stocks à bon prix!",
   "www.not-the-real-amazoun.urss"
 );
 
