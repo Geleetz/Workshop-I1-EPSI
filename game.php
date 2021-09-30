@@ -33,8 +33,8 @@
   </div>
   </div>
   <div class='pc'>
-    <button id="cleUSB" class='cleUSB' hidden="hidden"></button>
-    <button id="coffee" class='coffee' hidden="hidden"></button>
+    <button id="cleUSB" class='cleUSB'></button>
+    <button id="coffee" class='coffee'></button><!--hidden="hidden"-->
     <div class='ecran'>
       <button class="ecranveille">
         <h1 class="text-light">Revenir sur le PC</h1>
