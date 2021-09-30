@@ -4,12 +4,14 @@ quiz[0] = new Question(
   "Je la laisse ou je l'ai trouvé",
   "Je la ramène aux objets perdus",
   "Je regarde son contenu",
+  "usb"
 );
 quiz[1] = new Question(
   "Vous voulez prendre votre pause café ...",
   "Vous mettez en veille votre poste puis vous prenez votre pause",
   "Vous demandez à un collègue de vous ramener un café",
-  "Vous partez prendre votre pause"
+  "Vous partez prendre votre pause",
+  "coffee"
 );
 quiz[2] = new Question(
   "Vous recevez un mail de votre patron demandant de lui verser x euros à travers un lien internet",
