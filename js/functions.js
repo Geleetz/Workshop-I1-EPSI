@@ -90,14 +90,22 @@ function btnProvideQuestion() {
     case 0:
       showButton("cleUSB");
       hideButton("coffee");
+      hideButton("portable");
       break;
     case 1:
       showButton("coffee");
+      hideButton("cleUSB");
+      hideButton("portable");
+      break;
+    case 2:
+      showButton("portable");
+      hideButton("coffee");
       hideButton("cleUSB");
       break;
     default:
       hideButton("coffee");
       hideButton("cleUSB");
+      hideButton("portable");
       break;
   }
   shuffle(answers);
@@ -155,7 +163,7 @@ function hideWindow(divToHide){
 
 function showWindow(divToShow){
   var element=document.getElementById(divToShow);
-  if (element.style.display === "none"){
+  if (element.style.display != "block"){
     element.style.display="block";
   }else{
     element.style.display="none";
@@ -163,17 +171,17 @@ function showWindow(divToShow){
 }
 
 function hideButton(buttonToHide){
-  document.getElementById(buttonToHide).style.visibility = 'hidden';
+  document.getElementById(buttonToHide).hidden = true;
 }
 
 function showButton(buttonToShow){
-  document.getElementById(buttonToShow).style.visibility = 'visible';
+  document.getElementById(buttonToShow).hidden = false;
 }
 
 function sleep(onOrOff){
   if(onOrOff=="on"){
-    document.getElementById("sleepscreen-button").style.visibility='visible';
+    document.getElementById("sleepscreen-button").hidden = false;
   }else if(onOrOff=="off"){
-    document.getElementById("sleepscreen-button").style.visibility='hidden';
+    document.getElementById("sleepscreen-button").hidden = true;
   }
 }

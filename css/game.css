@@ -36,6 +36,19 @@
     background-repeat: no-repeat;
 }
 
+.portable {
+    background: url('../img/portable.png');
+    position: absolute;
+    border: none;
+    object-fit: cover;
+    width: 27vh;
+    height: 42%;
+    top: 58vh;
+    left: 12vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
 .cleUSB {
     background: url('../img/usb.png');
     position: absolute;
@@ -139,6 +152,7 @@ body {
   }
 
 .outlook{
+	display: none;
     position: absolute;
     background: url('../img/Mail/outlook_structure.png');
     border: none;
@@ -209,6 +223,7 @@ body {
 }
 
 .chrome{
+	display: none;
     position: absolute;
     background: url('../img/Navigateur/navigateur.png');
     border: none;
@@ -284,7 +299,6 @@ body {
 }
 
 .ecranveille {
-	visibility: hidden;
     height: 100%;
     width: 102%;
     left: -1%;
