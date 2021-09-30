@@ -20,8 +20,8 @@ quiz[2] = new Question(
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
-var questions;
-var answer;
+var questions = [];
+var answer = [];
 
 document.addEventListener("DOMContentLoaded", function (event) {
   btnProvideQuestion();
