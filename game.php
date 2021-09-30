@@ -37,7 +37,7 @@
   <button id="portable" class='portable' hidden onclick="answerA_clicked()"></button>
     <button id="coffee" class='coffee' hidden onclick="answerA_clicked()"></button><!--hidden="hidden"-->
     <div class='ecran'>
-      <button id="sleepscreen-button" class="ecranveille" onclick="sleep('off')">
+      <button id="sleepscreen-button" class="ecranveille" hidden onclick="sleep('off')">
         <h1 class="text-light" style="font-family: pixelfont;">Revenir sur le PC</h1>
       </button>
       <div id='outlook-window' class="outlook" >

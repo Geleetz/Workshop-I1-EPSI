@@ -180,8 +180,8 @@ function showButton(buttonToShow){
 
 function sleep(onOrOff){
   if(onOrOff=="on"){
-    document.getElementById("sleepscreen-button").style.visibility='visible';
+    document.getElementById("sleepscreen-button").hidden = false;
   }else if(onOrOff=="off"){
-    document.getElementById("sleepscreen-button").style.visibility='hidden';
+    document.getElementById("sleepscreen-button").hidden = true;
   }
 }
