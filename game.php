@@ -55,6 +55,7 @@
       </div>
       <div id="chrome-window" class="chrome" hidden>
         <button class="chromeexit" onclick="hideWindow('chrome-window')"></button>
+        <label class="url">https://www.amazoun.fr</label>
         <div class="amazoun">
           <button class="crayon" onclick="showWindow('amazoun-achat')"></button>
         </div>

@@ -234,6 +234,14 @@ body {
     background-repeat: no-repeat;
 }
 
+.url{
+    position: absolute;
+    height: 6.6%;
+    width: 26%;
+    top: 10.7%;
+    left: 16vh;
+}
+
 .amazoun{
     position: absolute;
     background: url('../img/Navigateur/acceuil_amazoun_v2.png');
