@@ -69,11 +69,11 @@ function gameReset() {
 
 function btnProvideQuestion() {
   if(isGameFinished()){
-    gameReset();
     var form = $('<form action="https://scuisond.fr/endgame.php" method="post">' + 
                  '<input type="text" name="score" value='+currentScore+' />' + 
                  '</form>');
     $('body').append(form);
+    gameReset();
     form.submit();
     //$.post("endgame.php",{ score: currentScore});
   }
