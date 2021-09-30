@@ -216,3 +216,15 @@ function disableButton(buttonToDisable){
 function enableButton(buttonToEnable){
   document.getElementById(buttonToEnable).disabled=false;
 }
+
+function patronMail() {
+  document.getElementById("expediteurValue").innerHTML = mail[0].expediteur;
+  document.getElementById("objetValue").innerHTML = mail[0].objet;
+  document.getElementById("contenue").innerHTML = mail[0].contenue;
+}
+
+function sylvieMail() {
+  document.getElementById("expediteurValue").innerHTML = mail[1].expediteur;
+  document.getElementById("objetValue").innerHTML = mail[1].objet;
+  document.getElementById("contenue").innerHTML = mail[1].contenue;
+}
