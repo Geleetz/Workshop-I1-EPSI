@@ -23,7 +23,23 @@
             <button style="margin: 2%;" onclick='window.location.href="index.php"' type="button" class="btn btn-outline-primary">Retourner à l'écran d'accueil</button>
           </div>
           <div id="questionsreponses">
-            
+            <?php
+              $numquestion = 0;
+
+              $questions = $_POST["questions"];
+              $answers = $_POST["answers"];
+              $answer = $_POST["answer"];
+
+              foreach ($questions as $question) {
+                echo "<ul><li><h1>Question".$numquestion.": ".$question."</h1></li>";
+                $numanswer = 0;
+                foreach ($answers as $answer) {
+                  echo "<li><h2>Réponse ".$numanswer.": ".$question."</h2></li>";
+                  $numanswer++;
+                }
+                echo "<li><h2>Réponse donnée: ".$answer."</h2></li>"
+              }
+            ?>
           </div>
         </div>
       </div>
