@@ -49,9 +49,18 @@
         <button class="exitbutton" onclick="hideWindow('outlook-window')"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>
       </div>
+      <div class="chrome">
+        <button class="chromeexit"></button>
+        <div class="amazoun">
+          <button class="crayon"></button>
+        </div>
+        <div class="amazounachat">
+          <button class="achat"></button>
+        </div>
+      </div>
       <button class='veille'></button>
       <button class='mail' onclick="showWindow('outlook-window')"></button>
-      <button class='chrome'></button>
+      <button class='chromeicon'></button>
       <div class='horloge'></div>
     </div>
     <div class="flex">

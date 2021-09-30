@@ -73,7 +73,7 @@
     background-repeat: no-repeat;
 }
 
-.chrome {
+.chromeicon {
     position: absolute;
     background: url('../img/chrome.png');
     border: none;
@@ -205,6 +205,80 @@ body {
     border: none;
     background: none;
 }
+
+.chrome{
+    position: absolute;
+    background: url('../img/Navigateur/navigateur.png');
+    border: none;
+    height: 80%;
+    width: 89%;
+    object-fit: cover;
+    top: 4%;
+    left: 9vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.amazoun{
+    position: absolute;
+    background: url('../img/Navigateur/acceuil_amazoun_v2.png');
+    border: none;
+    height: 83.6%;
+    width: 101%;
+    object-fit: cover;
+    top: 18.5%;
+    left: -1vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.crayon{
+    position: absolute;
+    background: url('../img/Navigateur/crayon.png');
+    border: none;
+    height: 21%;
+    width: 61%;
+    object-fit: cover;
+    top: 25%;
+    left: 8vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.amazounachat{
+    position: absolute;
+    background: url('../img/Navigateur/amazoun_v2.png');
+    border: none;
+    height: 84.5%;
+    width: 101%;
+    object-fit: cover;
+    top: 17.2%;
+    left: -1.2vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.achat{
+    position: absolute;
+    background: url('../img/Navigateur/bouton_achat.png');
+    border: none;
+    height: 14%;
+    width: 29%;
+    object-fit: cover;
+    top: 79%;
+    left: 57vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.chromeexit {
+    height: 3vh;
+    width: 3.5vh;
+    right: 0.8vh;
+    position: absolute;
+    top: 0.8vh;
+    border: none;
+    background: none;
 
 @font-face {
 	font-family: 'pixelfont';
