@@ -212,6 +212,7 @@ body {
     width: 25.7vh;
     top: 23.5%;
     left: 0.8vh;
+    font-size: 2.3vh;
 }
 
 .mailcontent{
@@ -243,6 +244,7 @@ body {
     left: 27vh;
     position: absolute;
     top: 4.5vh;
+    font-size: 2.3vh;
 }
 
 .objet {
@@ -251,6 +253,7 @@ body {
     left: 27vh;
     position: absolute;
     top: 9.5vh;
+    font-size: 2.3vh;
 }
 
 .contenue {
@@ -259,6 +262,16 @@ body {
     left: 27vh;
     position: absolute;
     top: 14.5vh;
+    font-size: 2.3vh;
+}
+
+#lien{
+    height: 4.5vh;
+    width: 54.5vh;
+    left: 30vh;
+    position: absolute;
+    top: 36.5vh;
+    font-size: 2.3vh;
 }
 
 .exitbutton{
