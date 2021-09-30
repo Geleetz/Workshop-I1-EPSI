@@ -21,16 +21,17 @@ var randomQuestion;
 var answers = [];
 var currentScore = 0;
 var questions = [];
-var answer = [];
+var totalanswer = [];
+var totalanswers = [];
 
 document.addEventListener("DOMContentLoaded", function (event) {
   btnProvideQuestion();
 });
 
 function addQuestionAnswers(question,answer){
-  questions[questions.length] = question;
-  answer[questions.length]["answers"] = answers;
-  answer[questions.length]["answer"] = answer;
+  questions.push(question);
+  totalanswers.push(answers);
+  totalanswer.push(answer);
 }
 
 function Question(
@@ -79,12 +80,15 @@ function btnProvideQuestion() {
   if(isGameFinished()){
     var request = new XMLHttpRequest();
     request.open('POST', 'https://scuisond.fr/endgame.php');
+    request.setRequestHeader("Content-Type", "application/json");
     var json = [];
     json['questions'] = JSON.stringify(questions);
-    json['answers'] = JSON.stringify(answer);
-    json['score'] = JSON.stringify(score);
+    json['answers'] = JSON.stringify(totalanswers);
+    json['answer'] = JSON.stringify(totalanswer);
+    json['score'] = JSON.stringify(currentScore);
+    console.log(JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
     gameReset();
-    request.send(JSON.stringify(json));
+    request.send(JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
