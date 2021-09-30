@@ -71,7 +71,6 @@ function btnProvideQuestion() {
   if(isGameFinished()){
     gameReset();
     $.post("endgame.php",{ score: currentScore});
-    window.location.href="endgame.php";
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
