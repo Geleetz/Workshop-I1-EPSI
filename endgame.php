@@ -36,7 +36,8 @@
           <div id="questionsreponses">
             <?php
               $numquestion = 0;
-
+              $json = json_decode($_POST["json"]);
+              echo $json;
               $questions = $_POST["questions"];
               $answers = $_POST["answers"];
               $answer = $_POST["answer"];
