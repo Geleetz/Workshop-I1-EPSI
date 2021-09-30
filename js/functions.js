@@ -20,10 +20,18 @@ quiz[2] = new Question(
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
+var questions = [];
+var answer = [];
 
 document.addEventListener("DOMContentLoaded", function (event) {
   btnProvideQuestion();
 });
+
+function addQuestionAnswers(question,answer){
+  questions[questions.length] = question;
+  answer[questions.length]["answers"] = answers;
+  answer[questions.length]["answer"] = answer;
+}
 
 function Question(
   question,
@@ -69,13 +77,14 @@ function gameReset() {
 
 function btnProvideQuestion() {
   if(isGameFinished()){
-    var form = $('<form action="https://scuisond.fr/endgame.php" method="post">' + 
-                 '<input type="text" name="score" value='+currentScore+' />' + 
-                 '</form>');
-    $('body').append(form);
+    var request = new XMLHttpRequest();
+    request.open('POST', 'https://scuisond.fr/endgame.php');
+    var json = [];
+    json['questions'] = JSON.stringify(questions);
+    json['answers'] = JSON.stringify(answer);
+    json['score'] = JSON.stringify(score);
     gameReset();
-    form.submit();
-    //$.post("endgame.php",{ score: currentScore});
+    request.send(JSON.stringify(json));
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
@@ -149,6 +158,7 @@ function adjustScore(value) {
 }
 
 function checkAnswer(answer) {
+  addQuestionAnswers(randomQuestion.question,answer)
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(1);
     btnProvideQuestion();
