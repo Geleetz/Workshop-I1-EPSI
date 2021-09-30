@@ -134,3 +134,10 @@ function checkAnswer(answer) {
     btnProvideQuestion();
   }
 }
+
+function hideWindow(divToHide){
+  document.getElementById(divToHide).style.display="none";
+}
+function showWindow(divToShow){
+  document.getElementById(divToShow).style.display='block';
+}
