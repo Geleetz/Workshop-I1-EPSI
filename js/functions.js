@@ -163,11 +163,11 @@ function showWindow(divToShow){
 }
 
 function hideButton(buttonToHide){
-  document.getElementById(buttonToHide).style.visibility = 'hidden';
+  document.getElementById(buttonToHide).hidden = true;
 }
 
 function showButton(buttonToShow){
-  document.getElementById(buttonToShow).style.visibility = 'visible';
+  document.getElementById(buttonToShow).hidden = false;
 }
 
 function sleep(onOrOff){
