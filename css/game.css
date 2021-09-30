@@ -38,7 +38,6 @@
 
 .portable {
     background: url('../img/portable.png');
-    visibility: visible;
     position: absolute;
     border: none;
     object-fit: cover;
