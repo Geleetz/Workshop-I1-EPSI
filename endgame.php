@@ -29,6 +29,25 @@
           <div class="d-grid gap-2 mx-auto" style="margin: 2%;">
             <button style="margin: 2%;" onclick='window.location.href="index.php"' type="button" class="btn btn-outline-primary">Retourner à l'écran d'accueil</button>
           </div>
+          <div id="questionsreponses">
+            <?php
+              $numquestion = 0;
+
+              $questions = $_GET["questions"];
+              $answers = $_GET["answers"];
+              $answer = $_GET["answer"];
+
+              foreach ($questions as $question) {
+                echo "<ul><li><h1>Question".$numquestion.": ".$question."</h1></li>";
+                $numanswer = 0;
+                foreach ($answers as $answer) {
+                  echo "<li><h2>Réponse ".$numanswer.": ".$question."</h2></li>";
+                  $numanswer++;
+                }
+                echo "<li><h2>Réponse donnée: ".$answer."</h2></li>"
+              }
+            ?>
+          </div>
         </div>
       </div>
     </div>
