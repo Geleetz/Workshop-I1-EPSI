@@ -78,9 +78,9 @@
             <?php
               $numquestion = 0;
 
-              $questions = $_GET["questions"];
-              $answers = $_GET["answers"];
-              $answer = $_GET["answer"];
+              $questions = $_POST["questions"];
+              $answers = $_POST["answers"];
+              $answer = $_POST["answer"];
 
               foreach ($questions as $question) {
                 echo "<ul><li><h1>Question".$numquestion.": ".$question."</h1></li>";

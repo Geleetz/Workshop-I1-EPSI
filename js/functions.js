@@ -78,7 +78,7 @@ function gameReset() {
 function btnProvideQuestion() {
   if(isGameFinished()){
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://scuisond.fr/endgame.php');
+    request.open('POST', 'https://scuisond.fr/endgame.php');
     var json = [];
     json['questions'] = questions;
     json['answers'] = answer;
