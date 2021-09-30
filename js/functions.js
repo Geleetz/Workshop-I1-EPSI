@@ -17,6 +17,12 @@ quiz[2] = new Question(
   "Ignorer l'email", // Cliquer sur le bouton ignorer; Score: +0
   "Cliquer sur le lien et verser l'argent demandé" // Cliquer sur le lien du mail; Score: -1
 );
+quiz[3]=new Question(
+  "Une collègue vous demande d'acheter des fournitures en lignes en vous fournissant un lien:",
+  "Aller chercher ces fournitures en ligne par vos propre moyens",
+  "Ne pas acheter les fournitures",
+  "Utiliser le lien fourni pour acheter les fourniture",
+)
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
