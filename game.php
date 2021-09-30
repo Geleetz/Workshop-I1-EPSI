@@ -37,7 +37,7 @@
     <button id="coffee" class='coffee'></button><!--hidden="hidden"-->
     <div class='ecran'>
       <button id="sleepscreen-button" class="ecranveille" onclick="sleep('off')">
-        <h1 class="text-light">Revenir sur le PC</h1>
+        <h1 class="text-light" style="font-family: pixelfont;">Revenir sur le PC</h1>
       </button>
       <div id='outlook-window' class="outlook">
         <div class="maillist">
