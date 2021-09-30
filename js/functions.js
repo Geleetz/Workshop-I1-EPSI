@@ -90,14 +90,22 @@ function btnProvideQuestion() {
     case 0:
       showButton("cleUSB");
       hideButton("coffee");
+      hideButton("portable");
       break;
     case 1:
       showButton("coffee");
+      hideButton("cleUSB");
+      hideButton("portable");
+      break;
+    case 2:
+      showButton("portable");
+      hideButton("coffee");
       hideButton("cleUSB");
       break;
     default:
       hideButton("coffee");
       hideButton("cleUSB");
+      hideButton("portable");
       break;
   }
   shuffle(answers);
