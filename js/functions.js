@@ -157,9 +157,9 @@ function showWindow(divToShow){
 }
 
 function hideButton(buttonToHide){
-  document.getElementById('buttonToHide').style.visibility = 'hidden';
+  document.getElementById(buttonToHide).style.visibility = 'hidden';
 }
 
 function showButton(buttonToShow){
-  document.getElementById('buttonToHide').style.visibility = 'visible';
+  document.getElementById(buttonToShow).style.visibility = 'visible';
 }
