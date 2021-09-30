@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-  <button class="ignorer" onclick="answerA_clicked()" style="font-family: pixelfont;">Ignorer</button>
+  <button class="ignorer" onclick="answerB_clicked()" style="font-family: pixelfont;">Ignorer</button>
   <div class='pc'>
     <button id="cleUSB" class='cleUSB' hidden onclick="answerC_clicked()"></button>
     <button id="portable" class='portable' hidden onclick="answerA_clicked()"></button>
@@ -43,10 +43,10 @@
       </button>
       <div id='outlook-window' class="outlook" hidden>
         <div class="maillist">
-          <button class="mails newmail" onclick="patronMail()" style="font-family: pixelfont;">patron@mail.fr
+          <button class="mails newmail" onclick="patronMail()" style="font-family: pixelfont;">Patron Officiel
             <!--<label class="expediteurPatron">patron@mail.fr</label>-->
           </button>
-          <button class="mails opennedmail" onclick="sylvieMail()" style="font-family: pixelfont;">sylvie.officielle@mail.fr
+          <button class="mails opennedmail" onclick="sylvieMail()" style="font-family: pixelfont;">Sylvie Compta
             <!--<label class="expediteurSylvie">sylvie@mail.fr</label>-->
           </button>
           <button class="mails opennedmail"></button>
@@ -75,7 +75,7 @@
           <button class="crayon" onclick="showWindow('amazoun-achat')"></button>
         </div>
         <div id="amazoun-achat" class="amazounachat" hidden>
-          <button class="achat"></button>
+          <button class="achat" onclick="if(document.getElementById('current-mission').value==quiz[3].question){answerA_clicked();}"></button>
         </div>
       </div>
       <button class='veille' onclick="sleep('on'); if(document.getElementById('current-mission').value==quiz[1].question){answerA_clicked();}"></button>

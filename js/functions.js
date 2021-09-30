@@ -26,7 +26,7 @@ quiz[3] = new Question(
 
 var mail = [];
 mail[0] = new Mail(
-  "patron@mail.fr",
+  "fake.patron@mail.fr",
   "Virement urgent!!!",
   "J'aurai besoin que vous me fassié un virement de 2000€ au plus vite, veuiller cliquer sur se lien pour le faire!",
   "www.ce-lien-n-est-pas-frauduleux.cpadlol"
