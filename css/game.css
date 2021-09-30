@@ -212,7 +212,7 @@ body {
     width: 25.7vh;
     top: 23.5%;
     left: 0.8vh;
-    font-size: 2.3vh;
+    font-size: 1.7vh;
 }
 
 .mailcontent{
@@ -240,29 +240,29 @@ body {
 
 .expediteur {
     height: 3.5vh;
-    width: 54.5vh;
-    left: 27vh;
+    width: 53.5vh;
+    left: 28vh;
     position: absolute;
     top: 4.5vh;
-    font-size: 2.3vh;
+    font-size: 1.7vh;
 }
 
 .objet {
     height: 3.5vh;
-    width: 54.5vh;
-    left: 27vh;
+    width: 53.5vh;
+    left: 28vh;
     position: absolute;
     top: 9.5vh;
-    font-size: 2.3vh;
+    font-size: 1.7vh;
 }
 
 .contenue {
-    height: 3.5vh;
-    width: 54.5vh;
-    left: 27vh;
+    height: 19.5vh;
+    width: 59.5vh;
+    left: 28vh;
     position: absolute;
     top: 14.5vh;
-    font-size: 2.3vh;
+    font-size: 1.7vh;
 }
 
 #lien{
@@ -271,7 +271,7 @@ body {
     left: 30vh;
     position: absolute;
     top: 36.5vh;
-    font-size: 2.3vh;
+    font-size: 1.7vh;
 }
 
 .exitbutton{
