@@ -33,10 +33,10 @@
   </div>
   </div>
   <div class='pc'>
-    <button id="cleUSB" class='cleUSB' hidden="hidden"></button>
-    <button id="coffee" class='coffee' hidden="hidden"></button>
+    <button id="cleUSB" class='cleUSB'></button>
+    <button id="coffee" class='coffee'></button><!--hidden="hidden"-->
     <div class='ecran'>
-      <button class="ecranveille">
+      <button id="sleepscreen-button" class="ecranveille" onclick="sleep('off')">
         <h1 class="text-light">Revenir sur le PC</h1>
       </button>
       <div id='outlook-window' class="outlook">
@@ -61,7 +61,7 @@
           <button class="achat"></button>
         </div>
       </div>
-      <button class='veille'></button>
+      <button class='veille' onclick="sleep('on')"></button>
       <button class='mail' onclick="showWindow('outlook-window')"></button>
       <button class='chromeicon'></button>
       <div class='horloge'></div>

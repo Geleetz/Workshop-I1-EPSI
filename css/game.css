@@ -284,6 +284,7 @@ body {
 }
 
 .ecranveille {
+	visibility: hidden;
     height: 100%;
     width: 102%;
     left: -1%;

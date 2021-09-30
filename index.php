@@ -13,8 +13,8 @@
     <div class="container w-50 h-100" style="color: white;">
       <div class="col align-middle pt-5">
         <div class="row align-middle text-center">
-          <h2 class="text-center my-5" style="font-family: pixelfont;">La cybersécurité au quotidien</h2>
-            <div class="container p-3 my-3 bg-white border border-dark rounded w-50">
+          <h2 class="text-center my-5" style="font-family: pixelfont; text-shadow: 5px 5px #000;">La cybersécurité au quotidien</h2>
+            <div class="container p-3 my-3 bg-white border rounded w-50">
             <div class="d-grid gap-2 mx-auto" style="margin: 2%;">
                 <button style="margin: 2%; padding-top: 4%;" onclick='window.location.href="game.php"' type="button" class="btn btn-outline-primary">Lancer la partie</button>
                 <button style="margin: 2%; padding-top: 4%;" type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#rulesmodal">Lire les règles</button>
@@ -31,16 +31,23 @@
             <div class="modal-body">
               <p style="margin-top: 2%; font-family: pixelfont;">
                 Quel est le but du jeu ? 
-                <br> 
+                <hr>
+              </p>
+                <p style="margin-top: 2%;">
                 Le but de notre jeu est de donner de bonnes pratiques de cyber-sécurité aux utilisateurs. C'est un enjeu actuel, de plus en plus de personnes disposent d'un ordinateur mais peu savent se protéger des potentielles menaces. Notre objectif est de vous montrer à travers d'un jeu comment bien s'y prendre.  
-                <br><br> 
+                </p>
+                <br>
+                <p style="margin-top: 2%; font-family: pixelfont;">
                 Qui peut y jouer ? 
-                <br> 
+                <hr>
+                </p>
+               
+               
                 Le jeu est ouvert à un public très large pour que ce soit d'un côté "éducatif" et d'un autre agréable à jouer pour l'utilisateur.
               </p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+              <button style="padding-top : 4%;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -52,22 +59,34 @@
             <div class="modal-body">
               <p style="margin-top: 2%; font-family: pixelfont;">
                 Qui êtes-vous ? 
-                <br> 
+                <hr>
+                </p>
+                <p style="margin-top: 2%;">
                 Vous êtes un employé d'une entreprise d'informatique, vous serez plongé dans une de vos journées quotidiennes durant laquelle vous allez être confronté à
                 différentes situations plus ou moins délicates. Celles-ci mettent en scène des aspects de la cybersécurité que vous rencontrerez lors de vos aventures dans l'entreprise. 
-                <br><br> 
+                
+                </p>
+                <br>
+                <p style="margin-top: 2%; font-family: pixelfont;">
                 Quel est votre objectif ? 
-                <br> 
+                <hr>
+                </p>
+                <p style="margin-top: 2%;">
                 Votre but, répondre aux missions qui vous sont demandées tout en respectant les règles et le temps limitée de la journée pour
                 la sécurité du numérique. 
-                <br><br>
-                Ou peut-on y jouer ?
+                
+                </p>
                 <br>
+                <p style="margin-top: 2%; font-family: pixelfont;">
+                Ou peut-on y jouer ?
+                <hr>
+                </p>
+                <p style="margin-top: 2%;">
                 Le jeu est disponible sur tous les navigateurs et uniquement sur navigateur.
               </p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+              <button style="padding-top : 4%;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>

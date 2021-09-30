@@ -89,9 +89,15 @@ function btnProvideQuestion() {
   switch(randomNumber){
     case 0:
       showButton("cleUSB");
+      hideButton("coffee");
       break;
     case 1:
       showButton("coffee");
+      hideButton("cleUSB");
+      break;
+    default:
+      hideButton("coffee");
+      hideButton("cleUSB");
       break;
   }
   shuffle(answers);
@@ -162,4 +168,12 @@ function hideButton(buttonToHide){
 
 function showButton(buttonToShow){
   document.getElementById(buttonToShow).style.visibility = 'visible';
+}
+
+function sleep(onOrOff){
+  if(onOrOff=="on"){
+    document.getElementById("sleepscreen-button").style.visibility='visible';
+  }else if(onOrOff=="off"){
+    document.getElementById("sleepscreen-button").style.visibility='hidden';
+  }
 }
