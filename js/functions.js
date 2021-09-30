@@ -2,8 +2,8 @@ var quiz = [];
 quiz[0] = new Question(
   "Vous trouvez une clé USB, que faites-vous avec ?",
   "Je la laisse ou je l'ai trouvé",
+  "Je la ramène aux objets perdus",
   "Je regarde son contenu",
-  "Je la ramène aux objets perdus"
 );
 quiz[1] = new Question(
   "Vous voulez prendre votre pause café ...",
@@ -65,12 +65,13 @@ function gameReset() {
   quiz.forEach((Question) => {
     Question.alreadyAsked = false;
   });
-  currentScore=0;
+  currentScore = 0;
 }
 
 function btnProvideQuestion() {
   if(isGameFinished()){
     gameReset();
+    //$.post("endgame.php",{ score: currentScore});
     window.location.href="endgame.php";
   }
 
@@ -116,24 +117,20 @@ function answerC_clicked() {
   checkAnswer(answerC);
 }
 
-function adjustScore(isCorrect) {
-  if (isCorrect) {
-    currentScore++;
-  } else {
-    if (currentScore > 0) {
-      currentScore--;
-    }
-  }
+function adjustScore(value) {
+  currentScore+=value;
   document.getElementById("score").innerHTML = currentScore;
 }
 
 function checkAnswer(answer) {
   if (answer == randomQuestion.rightAnswer) {
-    adjustScore(true);
+    adjustScore(1);
+    btnProvideQuestion();
+  } else if (answer == randomQuestion.wrongAnswer1){
+    adjustScore(0);
     btnProvideQuestion();
   } else {
-    adjustScore(false);
-    
+    adjustScore(-1);
     btnProvideQuestion();
   }
 }
