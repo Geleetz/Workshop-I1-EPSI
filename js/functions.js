@@ -1,21 +1,21 @@
 var quiz = [];
 quiz[0] = new Question(
   "Vous trouvez une clé USB, que faites-vous avec ?",
-  "Je la laisse ou je l'ai trouvé",
-  "Je la ramène aux objets perdus",
-  "Je regarde son contenu"
+  "Ignorer la clé USB", // Cliquer sur un bouton ignorer; Score: +0
+  "Ramener la clé aux objets perdus", // Cliquer sur le bouton; Score: +1
+  "Regarder son contenu" // Cliquer sur l'image clé USB; Score: -1
 );
 quiz[1] = new Question(
   "Vous voulez prendre votre pause café ...",
-  "Vous mettez en veille votre poste puis vous prenez votre pause",
-  "Vous demandez à un collègue de vous ramener un café",
-  "Vous partez prendre votre pause"
+  "Mettre en veille votre poste puis, partir en pause", // Cliquer sur le bouton veille puis café OU veille; Score: +1
+  "Ne pas partir en pause", // Cliquer sur le bouton ignorer; Score: +0 
+  "Partir directement en pause" // Cliquer sur le bouton café; Score: -1
 );
 quiz[2] = new Question(
-  "Vous recevez un mail de votre patron demandant de lui verser x euros à travers un lien internet",
-  "J'appelle mon patron pour demander confirmation",
-  "J'ignore le mail",
-  "Vous cliquez sur le lien et lui versez x euros"
+  "Vous recevez un mail de votre patron demandant de lui verser 2000 euros de toute urgence en vous envoyant un lien",
+  "Appeler le patron pour demander confirmation", // Cliquer sur le téléphone; Score: +1
+  "Ignorer l'email", // Cliquer sur le bouton ignorer; Score: +0
+  "Cliquer sur le lien et verser l'argent demandé" // Cliquer sur le lien du mail; Score: -1
 );
 var randomQuestion;
 var answers = [];
@@ -30,7 +30,6 @@ function Question(
   rightAnswer,
   wrongAnswer1,
   wrongAnswer2,
-  alreadyAsked
 ) {
   this.question = question;
   this.rightAnswer = rightAnswer;
@@ -71,7 +70,7 @@ function gameReset() {
 function btnProvideQuestion() {
   if(isGameFinished()){
     gameReset();
-    //$.post("endgame.php",{ score: currentScore});
+    $.post("endgame.php",{ score: currentScore});
     window.location.href="endgame.php";
   }
 
@@ -184,4 +183,12 @@ function sleep(onOrOff){
   }else if(onOrOff=="off"){
     document.getElementById("sleepscreen-button").hidden = true;
   }
+}
+
+function disableButton(buttonToDisable){
+  document.getElementById(buttonToDisable).disabled=true;
+}
+
+function enableButton(buttonToEnable){
+  document.getElementById(buttonToEnable).disabled=false;
 }
