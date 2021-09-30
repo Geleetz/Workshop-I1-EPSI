@@ -40,7 +40,7 @@
       <button id="sleepscreen-button" class="ecranveille" hidden onclick="sleep('off')">
         <h1 class="text-light" style="font-family: pixelfont;">Revenir sur le PC</h1>
       </button>
-      <div id='outlook-window' class="outlook" >
+      <div id='outlook-window' class="outlook" hidden >
         <div class="maillist">
           <button class="mails newmail"></button>
           <button class="mails opennedmail"></button>
@@ -53,12 +53,12 @@
         <button class="exitbutton" onclick="hideWindow('outlook-window')"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>
       </div>
-      <div id="chrome-window" class="chrome">
+      <div id="chrome-window" class="chrome" hidden>
         <button class="chromeexit" onclick="hideWindow('chrome-window')"></button>
         <div class="amazoun">
-          <button class="crayon"></button>
+          <button class="crayon" onclick="showWindow('amazoun-achat')"></button>
         </div>
-        <div class="amazounachat">
+        <div id="amazoun-achat" class="amazounachat" hidden>
           <button class="achat"></button>
         </div>
       </div>

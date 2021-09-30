@@ -158,15 +158,15 @@ function checkAnswer(answer) {
 }
 
 function hideWindow(divToHide){
-  document.getElementById(divToHide).style.display="none";
+  document.getElementById(divToHide).hidden=true;
 }
 
 function showWindow(divToShow){
   var element=document.getElementById(divToShow);
-  if (element.style.display != "block"){
-    element.style.display="block";
+  if (element.hidden != true){
+    element.hidden=true;
   }else{
-    element.style.display="none";
+    element.hidden=false;
   }
 }
 
