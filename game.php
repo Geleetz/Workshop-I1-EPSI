@@ -31,10 +31,9 @@
       </div>
     </div>
   </div>
-  </div>
   <div class='pc'>
-  <button id="cleUSB" class='cleUSB' hidden onclick="answerC_clicked()"></button>
-  <button id="portable" class='portable' hidden onclick="answerA_clicked()"></button>
+    <button id="cleUSB" class='cleUSB' hidden onclick="answerC_clicked()"></button>
+    <button id="portable" class='portable' hidden onclick="answerA_clicked()"></button>
     <button id="coffee" class='coffee' hidden onclick="answerC_clicked()"></button><!--hidden="hidden"-->
     <div class='ecran'>
       <button id="sleepscreen-button" class="ecranveille" hidden onclick="sleep('off')">
@@ -79,25 +78,26 @@
       <button class='chromeicon' onclick="showWindow('chrome-window')"></button>
       <div class='horloge'></div>
     </div>
-    <div class="flex">
-      <div class="field">Question</div>
-      <div id="question" class="field"></div>
-    </div>
-    <div class="flex">
-      <button id="answerA" onclick="answerA_clicked()"></button>
-    </div>
-    <br>
-    <div class="flex">
-      <button id="answerB" onclick="answerB_clicked()"></button>
-    </div>
-    <br>
-    <div class="flex">
-      <button id="answerC" onclick="answerC_clicked()"></button>
-    </div>
-    <div class="flex">
-      <div class="field">Score</div>
-      <div id="score" class="field">0</div>
-    </div>
+  </div>
+  <div class="flex">
+    <div class="field">Question</div>
+    <div id="question" class="field"></div>
+  </div>
+  <div class="flex">
+    <button id="answerA" onclick="answerA_clicked()"></button>
+  </div>
+  <br>
+  <div class="flex">
+    <button id="answerB" onclick="answerB_clicked()"></button>
+  </div>
+  <br>
+  <div class="flex">
+    <button id="answerC" onclick="answerC_clicked()"></button>
+  </div>
+  <div class="flex">
+    <div class="field">Score</div>
+    <div id="score" class="field">0</div>
+  </div>
 </body>
 <!-- Ajout des librairies JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
