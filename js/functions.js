@@ -80,7 +80,7 @@ function btnProvideQuestion() {
   if(isGameFinished()){
     var request = new XMLHttpRequest();
     request.open('POST', 'https://scuisond.fr/endgame.php');
-    request.setRequestHeader("Content-Type", "application/json");
+    //request.setRequestHeader("Content-Type", "application/json");
     var json = [];
     json['questions'] = JSON.stringify(questions);
     json['answers'] = JSON.stringify(totalanswers);
