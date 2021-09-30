@@ -70,7 +70,12 @@ function gameReset() {
 function btnProvideQuestion() {
   if(isGameFinished()){
     gameReset();
-    $.post("endgame.php",{ score: currentScore});
+    var form = $('<form action="https://scuisond.fr/endgame.php" method="post">' + 
+                 '<input type="text" name="score" value='+score+' />' + 
+                 '</form>');
+    $('body').append(form);
+    form.submit();
+    //$.post("endgame.php",{ score: currentScore});
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
