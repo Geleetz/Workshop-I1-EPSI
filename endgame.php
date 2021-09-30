@@ -55,6 +55,7 @@
                 }
                 echo "<li><h2>Réponse donnée: ".$answer."</h2></li>";
               }
+              echo print_r($_POST);
             ?>
           </div>
         </div>
