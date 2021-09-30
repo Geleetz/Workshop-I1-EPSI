@@ -30,7 +30,6 @@ function Question(
   rightAnswer,
   wrongAnswer1,
   wrongAnswer2,
-  alreadyAsked
 ) {
   this.question = question;
   this.rightAnswer = rightAnswer;
@@ -71,7 +70,7 @@ function gameReset() {
 function btnProvideQuestion() {
   if(isGameFinished()){
     gameReset();
-    //$.post("endgame.php",{ score: currentScore});
+    $.post("endgame.php",{ score: currentScore});
     window.location.href="endgame.php";
   }
 
@@ -108,6 +107,9 @@ function btnProvideQuestion() {
       hideButton("portable");
       break;
   }
+
+
+
   shuffle(answers);
 
   document.getElementById("current-mission").innerHTML = randomQuestion.question;
@@ -184,4 +186,12 @@ function sleep(onOrOff){
   }else if(onOrOff=="off"){
     document.getElementById("sleepscreen-button").hidden = true;
   }
+}
+
+function disableButton(buttonToDisable){
+  document.getElementById(buttonToDisable).disabled=true;
+}
+
+function enableButton(buttonToEnable){
+  document.getElementById(buttonToEnable).disabled=false;
 }
