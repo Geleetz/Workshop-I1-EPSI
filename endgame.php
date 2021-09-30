@@ -37,10 +37,9 @@
             <?php
               $numquestion = 0;
               $json = json_decode($_POST["json"]);
-              echo $json;
-              $questions = $_POST["questions"];
-              $answers = $_POST["answers"];
-              $answer = $_POST["answer"];
+              $questions = $json["questions"];
+              $answers = $json["answers"];
+              $answer = $json["answer"];
 
               foreach ($questions as $question) {
                 echo "<ul><li><h1>Question".$numquestion.": ".$question."</h1></li>";
