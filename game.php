@@ -15,16 +15,16 @@
   <div id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="accordion" id="accordionMissions">
       <div class="accordion-item">
-        <h2 class="accordion-header" id="firstMission">
+        <h2 class="accordion-header" id="firstMission" style="font-family: pixelfont;">
           <button id="current-mission" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMissions">
           <div class="accordion-body responsivepadding">
             <ul>
-              <li id="first-answer"></li>
-              <li id="second-answer"></li>
-              <li id="third-answer"></li>
+              <li id="first-answer" style="font-family: pixelfont;"></li>
+              <li id="second-answer" style="font-family: pixelfont;"></li>
+              <li id="third-answer" style="font-family: pixelfont;"></li>
             </ul>
           </div>
         </div>
@@ -33,10 +33,10 @@
   </div>
   </div>
   <div class='pc'>
-    <div class='cleUSB'></div>
-    <div class='coffee'></div>
+    <button class='cleUSB'></button>
+    <button class='coffee'></button>
     <div class='ecran'>
-      <div class="outlook">
+      <div id='outlook-window' class="outlook">
         <div class="maillist">
           <button class="mails newmail"></button>
           <button class="mails opennedmail"></button>
@@ -46,20 +46,20 @@
           <button class="mails opennedmail"></button>
         </div>
         <button class="fishing"></button>
-        <button class="exitbutton"></button>
+        <button class="exitbutton" onclick="hideWindow('outlook-window')"></button>
         <h2 id="mailcontent" class="mailcontent"></h2>
       </div>
       <div class="chrome">
-        <div class="chromeexit"></div>
+        <button class="chromeexit"></button>
         <div class="amazoun">
-          <div class="crayon"></div>
+          <button class="crayon"></button>
         </div>
         <div class="amazounachat">
-          <div class="achat"></div>
+          <button class="achat"></button>
         </div>
       </div>
       <button class='veille'></button>
-      <button class='mail'></button>
+      <button class='mail' onclick="showWindow('outlook-window')"></button>
       <button class='chromeicon'></button>
       <div class='horloge'></div>
     </div>

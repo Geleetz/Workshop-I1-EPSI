@@ -24,8 +24,10 @@
 }
 
 .coffee {
-    background-image: url('../img/coffee.png');
+    background: url('../img/coffee.png');
     position: absolute;
+    border: none;
+    object-fit: cover;
     width: 30vh;
     height: 42%;
     top: 58vh;
@@ -34,8 +36,10 @@
 }
 
 .cleUSB {
-    background-image: url('../img/usb.png');
+    background: url('../img/usb.png');
     position: absolute;
+    border: none;
+    object-fit: cover;
     width: 20vh;
     height: 10%;
     top: 90vh;
@@ -64,7 +68,7 @@
     width: 7vh; /*7*/
     object-fit: cover;
     bottom: 1%;
-    left: 11vh;
+    left: 11.5vh;
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
@@ -275,4 +279,12 @@ body {
     top: 0.8vh;
     border: none;
     background: none;
+
+@font-face {
+	font-family: 'pixelfont';
+	src:  url("../font/pixelfont.ttf");
+}
+
+.pixel-font {
+	font-family: 'pixelfont';
 }
