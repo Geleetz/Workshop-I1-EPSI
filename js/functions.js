@@ -86,7 +86,7 @@ function btnProvideQuestion() {
     json['answers'] = JSON.stringify(totalanswers);
     json['answer'] = JSON.stringify(totalanswer);
     json['score'] = JSON.stringify(currentScore);
-    //console.log({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore});
+    console.log({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore});
     gameReset();
     request.send({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore});
   }
