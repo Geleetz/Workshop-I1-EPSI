@@ -78,8 +78,8 @@ function gameReset() {
 
 function btnProvideQuestion() {
   if(isGameFinished()){
-    var request = new XMLHttpRequest();
-    request.open('POST', 'https://scuisond.fr/endgame.php');
+    //var request = new XMLHttpRequest();
+    //request.open('POST', 'https://scuisond.fr/endgame.php');
     //request.setRequestHeader("Content-Type", "application/json");
     var json = [];
     json['questions'] = JSON.stringify(questions);
@@ -88,7 +88,7 @@ function btnProvideQuestion() {
     json['score'] = JSON.stringify(currentScore);
     console.log(JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
     gameReset();
-    request.send(JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
+    $.post('https://scuisond.fr/endgame.php',JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
