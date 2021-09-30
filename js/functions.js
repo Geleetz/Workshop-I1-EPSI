@@ -1,8 +1,8 @@
 var quiz = [];
 quiz[0] = new Question(
   "Vous trouvez une clé USB, que faites-vous avec ?",
-  "Ignorer la clé USB", // Cliquer sur un bouton ignorer; Score: +0
   "Ramener la clé aux objets perdus", // Cliquer sur le bouton; Score: +1
+  "Ignorer la clé USB", // Cliquer sur un bouton ignorer; Score: +0
   "Regarder son contenu" // Cliquer sur l'image clé USB; Score: -1
 );
 quiz[1] = new Question(
@@ -20,10 +20,19 @@ quiz[2] = new Question(
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
+var questions = [];
+var totalanswer = [];
+var totalanswers = [];
 
 document.addEventListener("DOMContentLoaded", function (event) {
   btnProvideQuestion();
 });
+
+function addQuestionAnswers(question,answer){
+  questions.push(question);
+  totalanswers.push(answers);
+  totalanswer.push(answer);
+}
 
 function Question(
   question,
@@ -69,13 +78,17 @@ function gameReset() {
 
 function btnProvideQuestion() {
   if(isGameFinished()){
-    var form = $('<form action="https://scuisond.fr/endgame.php" method="post">' + 
-                 '<input type="text" name="score" value='+currentScore+' />' + 
-                 '</form>');
-    $('body').append(form);
+    var request = new XMLHttpRequest();
+    request.open('POST', 'https://scuisond.fr/endgame.php');
+    request.setRequestHeader("Content-Type", "application/json");
+    var json = [];
+    json['questions'] = JSON.stringify(questions);
+    json['answers'] = JSON.stringify(totalanswers);
+    json['answer'] = JSON.stringify(totalanswer);
+    json['score'] = JSON.stringify(currentScore);
+    console.log(JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
     gameReset();
-    form.submit();
-    //$.post("endgame.php",{ score: currentScore});
+    request.send(JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
@@ -114,6 +127,7 @@ function btnProvideQuestion() {
   // shuffle(answers);
 
   document.getElementById("current-mission").innerHTML = randomQuestion.question;
+  document.getElementById("current-mission").value = randomQuestion.question;
   document.getElementById("first-answer").innerHTML = answers[0];
   document.getElementById("second-answer").innerHTML = answers[1];
   document.getElementById("third-answer").innerHTML = answers[2];
@@ -148,6 +162,7 @@ function adjustScore(value) {
 }
 
 function checkAnswer(answer) {
+  addQuestionAnswers(randomQuestion.question,answer)
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(1);
     btnProvideQuestion();
