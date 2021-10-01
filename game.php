@@ -107,7 +107,7 @@
   </div>
   <form hidden id="endgameData" method="POST" action="https://scuisond.fr/endgame.php">
     <input type="text" name="score" id="score">
-    <input type="text" name="score" id="nbQuestions">
+    <input type="text" name="nbQuestions" id="nbQuestions">
   </form>
 </body>
 <!-- Ajout des librairies JS -->
