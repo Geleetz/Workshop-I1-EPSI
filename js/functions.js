@@ -94,8 +94,8 @@ function gameReset() {
 function btnProvideQuestion() {
   if (isGameFinished()) {
     var form = document.getElementById("endgameData");
-    form.getElementById("score").value=currentScore;
-    form.getElementById("nbQuestions").value=questions;
+    document.getElementById("score").value=currentScore;
+    document.getElementById("nbQuestions").value=questions;
     gameReset();
     form.submit();
   }
