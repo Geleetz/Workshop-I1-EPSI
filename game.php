@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-  <button class="objetTrouve" onclick="answerA_clicked()" style="font-family: pixelfont;">Ramener la clé aux objets perdus</button>
+  <button class="objetTrouve" id="objetTrouve" onclick="answerA_clicked()" style="font-family: pixelfont;">Ramener la clé aux objets perdus</button>
   <button class="ignorer" onclick="answerB_clicked()" style="font-family: pixelfont;">Ignorer</button>
   <div class='pc'>
     <button id="cleUSB" class='cleUSB' hidden onclick="answerC_clicked()"></button>
