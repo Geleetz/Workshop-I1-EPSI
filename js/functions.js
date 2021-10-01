@@ -114,6 +114,7 @@ function btnProvideQuestion() {
   switch (randomNumber) {
     case 0:
       showButton("cleUSB");
+      showButton("objetTrouve");
       hideButton("coffee");
       hideButton("portable");
       break;
@@ -121,16 +122,19 @@ function btnProvideQuestion() {
       showButton("coffee");
       hideButton("cleUSB");
       hideButton("portable");
+      hideButton("objetTrouve");
       break;
     case 2:
       showButton("portable");
       hideButton("coffee");
       hideButton("cleUSB");
+      hideButton("objetTrouve");
       break;
     default:
       hideButton("coffee");
       hideButton("cleUSB");
       hideButton("portable");
+      hideButton("objetTrouve");
       break;
   }
   // shuffle(answers);
