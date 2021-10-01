@@ -117,21 +117,32 @@ function btnProvideQuestion() {
       showButton("objetTrouve");
       hideButton("coffee");
       hideButton("portable");
+      hideButton("lienFourni");
       break;
     case 1:
       showButton("coffee");
       hideButton("cleUSB");
       hideButton("portable");
       hideButton("objetTrouve");
+      hideButton("lienFourni");
       break;
     case 2:
       showButton("portable");
       hideButton("coffee");
       hideButton("cleUSB");
       hideButton("objetTrouve");
+      hideButton("lienFourni");
+      break;
+    case 3:
+      showButton("lienFourni");
+      hideButton("coffee");
+      hideButton("cleUSB");
+      hideButton("portable");
+      hideButton("objetTrouve");
       break;
     default:
       hideButton("coffee");
+      hideButton("lienFourni");
       hideButton("cleUSB");
       hideButton("portable");
       hideButton("objetTrouve");

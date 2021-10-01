@@ -150,6 +150,15 @@ body {
     font-size: 2.3vh;
 }
 
+.lienFourni{
+    position: absolute;
+    top: 50vh;
+    right: 3.5vh;
+    width: 40vh;
+    height: 6%;
+    font-size: 2.3vh;
+}
+
 #sidebarMenu li{
     font-size: 2vh;
 }
