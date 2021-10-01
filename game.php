@@ -104,9 +104,9 @@
       <div id="score" class="field">0</div>
     </div>
   </div>
-  <form hidden name="endgameData" method="POST" action="https://scuisond.fr/endgame.php">
-    <input type="text" name="score">
-    <input type="text" name="nbQuestions">
+  <form hidden id="endgameData" method="POST" action="https://scuisond.fr/endgame.php">
+    <input type="text" id="score">
+    <input type="text" id="nbQuestions">
   </form>
 </body>
 <!-- Ajout des librairies JS -->
