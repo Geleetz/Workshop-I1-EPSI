@@ -94,8 +94,8 @@ function gameReset() {
 function btnProvideQuestion() {
   if (isGameFinished()) {
     var form = document.getElementById("endgameData");
-    form.getElementById("score").value=currentScore;
-    form.getElementById("nbQuestions").value=questions;
+    document.getElementById("score").value=currentScore;
+    document.getElementById("nbQuestions").value=questions;
     gameReset();
     form.submit();
   }
@@ -192,11 +192,11 @@ function checkAnswer(answer) {
 
 function addQuestionInputs(answer){
   var form = document.getElementById("endgameData");
-  form.innerHTML += "<input type='text' name='question"+questions+"' value='"+randomQuestion.question+"'>";
-  form.innerHTML += "<input type='text' name='rightanswer"+questions+"' value='"+randomQuestion.rightAnswer+"'>";
-  form.innerHTML += "<input type='text' name='neutralanswer"+questions+"' value='"+randomQuestion.wrongAnswer1+"'>";
-  form.innerHTML += "<input type='text' name='wronganswer"+questions+"' value='"+randomQuestion.wrongAnswer2+"'>";
-  form.innerHTML += "<input type='text' name='answer"+questions+"' value='"+answer+"'>";
+  document.getElementById("endgameData").innerHTML += "<input type='text' name='question"+questions+"' value='"+randomQuestion.question+"'>";
+  document.getElementById("endgameData").innerHTML += "<input type='text' name='rightanswer"+questions+"' value='"+randomQuestion.rightAnswer+"'>";
+  document.getElementById("endgameData").innerHTML += "<input type='text' name='neutralanswer"+questions+"' value='"+randomQuestion.wrongAnswer1+"'>";
+  document.getElementById("endgameData").innerHTML += "<input type='text' name='wronganswer"+questions+"' value='"+randomQuestion.wrongAnswer2+"'>";
+  document.getElementById("endgameData").innerHTML += "<input type='text' name='answer"+questions+"' value='"+answer+"'>";
 }
 
 function hideWindow(divToHide) {
