@@ -104,6 +104,10 @@
       <div id="score" class="field">0</div>
     </div>
   </div>
+  <form hidden name="endgameData" method="POST" action="https://scuisond.fr/endgame.php">
+    <input type="text" name="score">
+    <input type="text" name="nbQuestions">
+  </form>
 </body>
 <!-- Ajout des librairies JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

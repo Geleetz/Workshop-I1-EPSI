@@ -41,19 +41,11 @@ mail[1] = new Mail(
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
-var questions = [];
-var totalanswer = [];
-var totalanswers = [];
+var questions = 0;
 
 document.addEventListener("DOMContentLoaded", function (event) {
   btnProvideQuestion();
 });
-
-function addQuestionAnswers(question, answer) {
-  questions.push(question);
-  totalanswers.push(answers);
-  totalanswer.push(answer);
-}
 
 function Question(question, rightAnswer, wrongAnswer1, wrongAnswer2) {
   this.question = question;
@@ -101,28 +93,10 @@ function gameReset() {
 
 function btnProvideQuestion() {
   if (isGameFinished()) {
-    //var request = new XMLHttpRequest();
-    //request.open('POST', 'https://scuisond.fr/endgame.php');
-    //request.setRequestHeader("Content-Type", "application/json");
-    var json = [];
-    json["questions"] = JSON.stringify(questions);
-    json["answers"] = JSON.stringify(totalanswers);
-    json["answer"] = JSON.stringify(totalanswer);
-    json["score"] = JSON.stringify(currentScore);
-    console.log(
-      JSON.stringify({
-        questions: questions,
-        answers: totalanswers,
-        answer: totalanswer,
-        score: currentScore,
-      })
-    );
+    var form = document.getElementById("endgameData");
+    form.getElementById("score").value=currentScore;
+    form.getElementById("nbQuestions").value=questions;
     gameReset();
-    var json = JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore});
-    var form = $('<form action="' + 'https://scuisond.fr/endgame.php' + '" method="post">' +
-                  '<input type="text" name="json" value="' + json.replaceAll('"','\'') + '" />' +
-                  '</form>');
-    $('body').append(form);
     form.submit();
   }
 
@@ -198,7 +172,8 @@ function adjustScore(value) {
 }
 
 function checkAnswer(answer) {
-  addQuestionAnswers(randomQuestion.question, answer);
+  questions++;
+  addQuestionInputs(answer);
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(1);
     btnProvideQuestion();
@@ -209,6 +184,15 @@ function checkAnswer(answer) {
     adjustScore(-1);
     btnProvideQuestion();
   }
+}
+
+function addQuestionInputs(answer){
+  var form = document.getElementById("endgameData");
+  form.innerHTML += "<input type='text' name='question"+questions+"' value='"+randomQuestion.question+"'>";
+  form.innerHTML += "<input type='text' name='rightanswer"+questions+"' value='"+randomQuestion.rightAnswer+"'>";
+  form.innerHTML += "<input type='text' name='neutralanswer"+questions+"' value='"+randomQuestion.wrongAnswer1+"'>";
+  form.innerHTML += "<input type='text' name='wronganswer"+questions+"' value='"+randomQuestion.wrongAnswer2+"'>";
+  form.innerHTML += "<input type='text' name='answer"+questions+"' value='"+answer+"'>";
 }
 
 function hideWindow(divToHide) {
