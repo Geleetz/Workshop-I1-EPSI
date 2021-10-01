@@ -8,7 +8,7 @@ quiz[0] = new Question(
 quiz[1] = new Question(
   "Vous voulez prendre votre pause café ...",
   "Mettre en veille votre poste puis, partir en pause", // Cliquer sur le bouton veille puis café OU veille; Score: +1
-  "Ne pas partir en pause", // Cliquer sur le bouton ignorer; Score: +0 
+  "Ne pas partir en pause", // Cliquer sur le bouton ignorer; Score: +0
   "Partir directement en pause" // Cliquer sur le bouton café; Score: -1
 );
 quiz[2] = new Question(
@@ -17,6 +17,27 @@ quiz[2] = new Question(
   "Ignorer l'email", // Cliquer sur le bouton ignorer; Score: +0
   "Cliquer sur le lien et verser l'argent demandé" // Cliquer sur le lien du mail; Score: -1
 );
+quiz[3] = new Question(
+  "Une collègue vous demande d'acheter des fournitures en lignes en vous fournissant un lien:",
+  "Aller chercher ces fournitures en ligne par vos propre moyens",
+  "Ne pas acheter les fournitures",
+  "Utiliser le lien fourni pour acheter les fourniture"
+);
+
+var mail = [];
+mail[0] = new Mail(
+  "fake.patron@mail.fr",
+  "Virement urgent!!!",
+  "J'aurai besoin que vous me fassié un virement de 2000€ au plus vite, veuiller cliquer sur se lien pour le faire!",
+  "www.ce-lien-n-est-pas-frauduleux.cpadlol"
+);
+mail[1] = new Mail(
+  "sylvie.officielle@mail.fr",
+  "Achat de fourniture",
+  "Bonjour, j'aurai besoin que vous vous occupiez de renouveler le stock de crayon.<br>Ci-joint un lien où j'ai trouvé de quoi remplir nos stocks à bon prix!",
+  "www.not-the-real-amazoun.urss"
+);
+
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
@@ -28,23 +49,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
   btnProvideQuestion();
 });
 
-function addQuestionAnswers(question,answer){
+function addQuestionAnswers(question, answer) {
   questions.push(question);
   totalanswers.push(answers);
   totalanswer.push(answer);
 }
 
-function Question(
-  question,
-  rightAnswer,
-  wrongAnswer1,
-  wrongAnswer2,
-) {
+function Question(question, rightAnswer, wrongAnswer1, wrongAnswer2) {
   this.question = question;
   this.rightAnswer = rightAnswer;
   this.wrongAnswer1 = wrongAnswer1;
   this.wrongAnswer2 = wrongAnswer2;
   this.alreadyAsked = false;
+}
+
+function Mail(expediteur, objet, contenue, lien) {
+  this.expediteur = expediteur;
+  this.objet = objet;
+  this.contenue = contenue;
+  this.lien = lien;
 }
 
 function shuffle(o) {
@@ -77,18 +100,30 @@ function gameReset() {
 }
 
 function btnProvideQuestion() {
-  if(isGameFinished()){
-    var request = new XMLHttpRequest();
-    request.open('POST', 'https://scuisond.fr/endgame.php');
+  if (isGameFinished()) {
+    //var request = new XMLHttpRequest();
+    //request.open('POST', 'https://scuisond.fr/endgame.php');
     //request.setRequestHeader("Content-Type", "application/json");
     var json = [];
-    json['questions'] = JSON.stringify(questions);
-    json['answers'] = JSON.stringify(totalanswers);
-    json['answer'] = JSON.stringify(totalanswer);
-    json['score'] = JSON.stringify(currentScore);
-    console.log(JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
+    json["questions"] = JSON.stringify(questions);
+    json["answers"] = JSON.stringify(totalanswers);
+    json["answer"] = JSON.stringify(totalanswer);
+    json["score"] = JSON.stringify(currentScore);
+    console.log(
+      JSON.stringify({
+        questions: questions,
+        answers: totalanswers,
+        answer: totalanswer,
+        score: currentScore,
+      })
+    );
     gameReset();
-    request.send(JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore}));
+    var json = JSON.stringify({'questions': questions, 'answers': totalanswers, 'answer': totalanswer, 'score': currentScore});
+    var form = $('<form action="' + 'https://scuisond.fr/endgame.php' + '" method="post">' +
+                  '<input type="text" name="json" value="' + json.replaceAll('"','\'') + '" />' +
+                  '</form>');
+    $('body').append(form);
+    form.submit();
   }
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
@@ -102,7 +137,7 @@ function btnProvideQuestion() {
     randomQuestion.wrongAnswer1,
     randomQuestion.wrongAnswer2,
   ];
-  switch(randomNumber){
+  switch (randomNumber) {
     case 0:
       showButton("cleUSB");
       hideButton("coffee");
@@ -126,7 +161,8 @@ function btnProvideQuestion() {
   }
   // shuffle(answers);
 
-  document.getElementById("current-mission").innerHTML = randomQuestion.question;
+  document.getElementById("current-mission").innerHTML =
+    randomQuestion.question;
   document.getElementById("current-mission").value = randomQuestion.question;
   document.getElementById("first-answer").innerHTML = answers[0];
   document.getElementById("second-answer").innerHTML = answers[1];
@@ -157,16 +193,16 @@ function answerC_clicked() {
 }
 
 function adjustScore(value) {
-  currentScore+=value;
+  currentScore += value;
   document.getElementById("score").innerHTML = currentScore;
 }
 
 function checkAnswer(answer) {
-  addQuestionAnswers(randomQuestion.question,answer)
+  addQuestionAnswers(randomQuestion.question, answer);
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(1);
     btnProvideQuestion();
-  } else if (answer == randomQuestion.wrongAnswer1){
+  } else if (answer == randomQuestion.wrongAnswer1) {
     adjustScore(0);
     btnProvideQuestion();
   } else {
@@ -175,39 +211,53 @@ function checkAnswer(answer) {
   }
 }
 
-function hideWindow(divToHide){
-  document.getElementById(divToHide).hidden=true;
+function hideWindow(divToHide) {
+  document.getElementById(divToHide).hidden = true;
 }
 
-function showWindow(divToShow){
-  var element=document.getElementById(divToShow);
-  if (element.hidden != true){
-    element.hidden=true;
-  }else{
-    element.hidden=false;
+function showWindow(divToShow) {
+  var element = document.getElementById(divToShow);
+  if (element.hidden != true) {
+    element.hidden = true;
+  } else {
+    element.hidden = false;
   }
 }
 
-function hideButton(buttonToHide){
+function hideButton(buttonToHide) {
   document.getElementById(buttonToHide).hidden = true;
 }
 
-function showButton(buttonToShow){
+function showButton(buttonToShow) {
   document.getElementById(buttonToShow).hidden = false;
 }
 
-function sleep(onOrOff){
-  if(onOrOff=="on"){
+function sleep(onOrOff) {
+  if (onOrOff == "on") {
     document.getElementById("sleepscreen-button").hidden = false;
-  }else if(onOrOff=="off"){
+  } else if (onOrOff == "off") {
     document.getElementById("sleepscreen-button").hidden = true;
   }
 }
 
-function disableButton(buttonToDisable){
-  document.getElementById(buttonToDisable).disabled=true;
+function disableButton(buttonToDisable) {
+  document.getElementById(buttonToDisable).disabled = true;
 }
 
-function enableButton(buttonToEnable){
-  document.getElementById(buttonToEnable).disabled=false;
+function enableButton(buttonToEnable) {
+  document.getElementById(buttonToEnable).disabled = false;
+}
+
+function patronMail() {
+  document.getElementById("expediteurValue").innerHTML = mail[0].expediteur;
+  document.getElementById("objetValue").innerHTML = mail[0].objet;
+  document.getElementById("contenue").innerHTML = mail[0].contenue;
+  document.getElementById("lien").innerHTML = mail[0].lien;
+}
+
+function sylvieMail() {
+  document.getElementById("expediteurValue").innerHTML = mail[1].expediteur;
+  document.getElementById("objetValue").innerHTML = mail[1].objet;
+  document.getElementById("contenue").innerHTML = mail[1].contenue;
+  document.getElementById("lien").innerHTML = mail[1].lien;
 }
