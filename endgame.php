@@ -16,8 +16,8 @@
       <div class="row align-middle">
         <h2 class="text-center my-5" style="font-family: pixelfont; color: white; text-shadow: 5px 5px #000;">La cybersécurité au quotidien</h2>
         <div class="container p-3 my-3 bg-white border border rounded w-75">
-          <?php 
-          $score = $_POST["json"]["score"];
+          <?= 
+          $score = $_POST["score"];
           if ($score <= 0) {
             echo "<p style='margin-top: 2%; font-family: pixelfont;'>Vous avez peu d'expériences en sécurité, mais vous ne pouvez que vous améliorer !</p>
             <br><p style='margin-top: 2%; font-family: pixelfont;'>Votre score est :". $score ."</p><br>
@@ -40,26 +40,14 @@
           </div>
           <div id="questionsreponses">
             <?php
-              $numquestion = 0;
-              $json = json_decode($_POST["json"]);
-              $questions = $json["questions"];
-              $answers = $json["answers"];
-              $answer = $json["answer"];
-
-              foreach ($questions as $question) {
-                echo "<ul><li><h1>Question".$numquestion.": ".$question."</h1></li>";
-                $numanswer = 0;
-                foreach ($answers as $answer) {
-                  echo "<li><h2>Réponse ".$numanswer.": ".$question."</h2></li>";
-                  $numanswer++;
-                }
-                echo "<li><h2>Réponse donnée: ".$answer."</h2></li>";
+              $nbquestion = $_POST["nbQuestions"];
+              for ($i=0; $i < $nbquestion; $i++) { 
+                echo "<ul><li><h1>Question ".$i.": ".$_POST["question".$i]."</h1></li>";
+                echo "<li><h2>Bonne réponse ".$i.": ".$_POST["rightanswer".$i]."</h2></li>";
+                echo "<li><h2>Réponse neutre ".$i.": ".$_POST["neutralanswer".$i]."</h2></li>";
+                echo "<li><h2>Mauvaise réponse ".$i.": ".$_POST["wronganswer".$i]."</h2></li>";
+                echo "<li><h2>Réponse donnée ".$i.": ".$_POST["answer".$i]."</h2></li>";
               }
-              echo print_r($_POST);
-              echo "decode"+json_decode($_POST["json"]);
-              echo "questions"+$json["questions"];
-              echo "answers"+$json["answers"];
-              echo "answer"+$json["answer"];
             ?>
           </div>
         </div>
