@@ -40,6 +40,7 @@
           </div>
           <div id="questionsreponses">
             <?php
+              echo print_r($_POST);
               $nbquestion = $_POST["nbQuestions"];
               for ($i=0; $i < $nbquestion; $i++) { 
                 echo "<ul><li><h1>Question ".$i.": ".$_POST["question".$i]."</h1></li>";
