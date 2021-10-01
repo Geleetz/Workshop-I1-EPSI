@@ -41,8 +41,6 @@
                 Qui peut y jouer ? 
                 <hr>
                 </p>
-               
-               
                 Le jeu est ouvert à un public très large pour que ce soit d'un côté "éducatif" et d'un autre agréable à jouer pour l'utilisateur.
               </p>
             </div>
