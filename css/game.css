@@ -141,6 +141,15 @@ body {
     font-size: 2.3vh;
 }
 
+.objetTrouve{
+    position: absolute;
+    top: 50vh;
+    right: 0.5vh;
+    width: 52vh;
+    height: 6%;
+    font-size: 2.3vh;
+}
+
 #sidebarMenu li{
     font-size: 2vh;
 }
