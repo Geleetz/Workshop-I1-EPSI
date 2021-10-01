@@ -85,24 +85,24 @@
       <button class='chromeicon' onclick="showWindow('chrome-window')"></button>
       <div class='horloge'></div>
     </div>
-    <div class="flex">
+    <div class="flex" hidden>
       <div class="field">Question</div>
       <div id="question" class="field"></div>
     </div>
-    <div class="flex">
+    <div class="flex" hidden>
       <button id="answerA" onclick="answerA_clicked()"></button>
     </div>
     <br>
-    <div class="flex">
+    <div class="flex" hidden>
       <button id="answerB" onclick="answerB_clicked()"></button>
     </div>
     <br>
-    <div class="flex">
+    <div class="flex" hidden>
       <button id="answerC" onclick="answerC_clicked()"></button>
     </div>
     <div class="flex">
-      <div class="field">Score</div>
-      <div id="score" class="field">0</div>
+      <div class="field"  style="font-family: pixelfont; margin-top: 1%;">Score</div>
+      <div id="score" class="field"  style="font-family: pixelfont; margin-top: 1%;">0</div>
     </div>
   </div>
   <form hidden id="endgameData" method="POST" action="https://scuisond.fr/endgame.php">

@@ -18,7 +18,7 @@
         <div class="container p-3 my-3 bg-white border border rounded w-75">
           <?php 
           if ($_POST["score"] <= 0) {
-            echo "<p style='margin-top: 2%; font-family: pixelfont;'>Vous avez peu d'expériences en sécurité, mais vous ne pouvez que vous améliorer !</p>
+            echo "<p style='margin-top: 2%; font-f ;amily: pixelfont;'>Vous avez peu d'expériences en sécurité, mais vous ne pouvez que vous améliorer !</p>
             <br><p style='margin-top: 2%; font-family: pixelfont;'>Votre score est : ". $_POST["score"] ."</p><br>
             <p style='margin-top: 2%; font-family: pixelfont;'>Selon vos réponses, on peut voir que vous possédez des lacunes et il faudra faire attention à vous pour ne pas vous faire pièger. Voici quelques liens qui vous serons utiles pour poursuivre des formations ou avoir des conseilles ou règles concernant la cybersécurité :
             <br><br>https://pix.fr<br>https://www.cnil.fr/professionnel<br>https://www.ssi.gouv.fr</p>";
